@@ -76,7 +76,6 @@ body{
     width: 200px;
     background-color:#888888;
     margin-top: 5px;
-    float:left;
     margin-right: 100px;
 }
 .ace-box{
@@ -85,5 +84,4 @@ body{
     width: 200px;
     background-color:#888888;
     margin-top: 5px;
-    float:right;
 }
