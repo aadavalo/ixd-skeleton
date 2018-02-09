@@ -1,0 +1,9 @@
+#sized-down{
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.info{
+	position: relative;
+	float: right;
+}

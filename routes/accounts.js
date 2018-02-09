@@ -5,5 +5,5 @@
 var statusData = require ('../status-data.json');
 
 exports.view = function(req, res){
-  res.render('index', statusData)
+  res.render('accounts', statusData)
 };
