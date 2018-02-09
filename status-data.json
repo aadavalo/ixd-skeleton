@@ -18,5 +18,23 @@
 		{
 			"name": "stroller/cart"
 		}
+	],
+
+	"points": [
+		{
+			"label": "distance"
+		},
+		{
+			"label": "routes"
+		},
+		{
+			"label": "extra"
+		}
+	],
+
+	"total": [
+		{
+			"allPoints": "pointTotal"
+		}
 	]
 }
