@@ -80,7 +80,7 @@ li a:hover {
 
 #favorites {
     color:#ff0000;
-    margin-top: 1px;
+    margin-top: 5px;
     margin-right: 2px;
     position:absolute;
     top: 100px;
@@ -90,6 +90,21 @@ li a:hover {
 #favorites:hover{
     background-color:#3B6EC2;} 
 }
+
+#settings {
+    color:#ff0000;
+    border-top: 5px;
+    margin-top: 5px;
+    margin-right: 2px;
+    position:absolute;
+    top: 100px;
+    right:6px;
+    }
+
+#settings:hover{
+    background-color:#3B6EC2;} 
+}
+
 
 
 
