@@ -13,6 +13,7 @@ var accounts = require('./routes/accounts');
 var settings = require('./routes/settings');
 var favorites = require('./routes/favorites');
 var routes = require('./routes/routes');
+var edit = require('./routes/edit');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,6 +44,7 @@ app.get('/accounts', accounts.view);
 app.get('/settings', settings.view);
 app.get('/favorites', favorites.view);
 app.get('/routes', routes.view);
+app.get('/edit', edit.view);
 // Example route
 // app.get('/users', user.list);
 
