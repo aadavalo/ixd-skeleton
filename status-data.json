@@ -1,0 +1,22 @@
+{
+	"status": [
+		{
+			"name": "handicap seat"
+		},
+		{
+			"name": "wheelchair"		
+		},
+		{
+			"name": "large carryload"
+		},
+		{
+			"name": "bike"	
+		},
+		{
+			"name": "senior citizen"
+		},
+		{
+			"name": "stroller/cart"
+		}
+	]
+}
