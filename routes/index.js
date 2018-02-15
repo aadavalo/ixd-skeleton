@@ -2,8 +2,10 @@
 /*
  * GET home page.
  */
-var statusData = require ('../status-data.json');
+
+
+var data = require ('../data.json');
 
 exports.view = function(req, res){
-  res.render('index', statusData)
+  res.render('index', data)
 };

@@ -11,3 +11,23 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
 }
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+function openNav2() {
+    document.getElementById("mySidenav2").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav2() {
+    document.getElementById("mySidenav2").style.width = "0";
+}
