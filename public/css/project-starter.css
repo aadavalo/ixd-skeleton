@@ -110,25 +110,26 @@ body{
   padding-top: 8%;
 }
 
+#routes-p{
+  margin-left: 18%;
+}
 
 #routes-ul {
     display: none;
-    top: 25px;
-    right: 8;
     position: absolute;
     float: right;
-	list-style-type: none;
+	 list-style-type: none;
     padding: 0px;
-    margin: 50px;
+    margin: auto;
 }
 
 #routes-ul li a {
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: #f6f6f6;
-    padding: 8px;
+    padding: 1px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 40px;
     color: black;
     display: block;
 }
@@ -234,7 +235,7 @@ span{
   overflow: hidden;
   background-color: #e9e9e9;
   width: 40%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 
@@ -264,29 +265,6 @@ span{
 .topnav .search-container {
   float: right;
 }
-
-#search-p {}
-
-.topnav input[type=text]{
-    width: 250px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
-    background-color: white;
-    background-position: 8px 8px;
-    background-image: url('/images/search-icon.jpg');
-    background-repeat: no-repeat;
-    padding: 10px 10px 10px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-.topnav input[type=text]:focus{
-    width:350px;
-}
-
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {
@@ -331,26 +309,9 @@ span{
 }
 
 .topnav input[type=text]:focus{
-    width:350px;
+    width:200%;
 }
 
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text],{
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
 
 
 

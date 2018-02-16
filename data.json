@@ -1,14 +1,10 @@
 {
 
-	"North Campus Shuttle": [
+	"NorthCampusShuttle": [
 		{
+			"stop": "P 704 Regents Parking",
+			"number": "14",
 			"name": "North Campus Shuttle"
-		},
-		{
-			"number": "14"
-		},
-		{
-			"stop": "P 704 Regents Parking"
 		},
 		{
 			"stop": "Lot P510/Canyonview (W)"
