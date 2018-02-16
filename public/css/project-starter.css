@@ -111,7 +111,7 @@ body{
 }
 
 #routes-p{
-  margin-left: 18%;
+  margin-left: 25%;
 }
 
 #routes-ul {
@@ -141,7 +141,29 @@ body{
     bottom: 0;
 }
 
+#stops-ul {
+    display: inline;
+    position: absolute;
+    float: right;
+   list-style-type: none;
+    padding: 0px;
+    margin: auto;
+}
 
+#stops-ul li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 1px;
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    display: block;
+}
+
+#stops-ul li a:hover:not(.header) {
+    background-color: #0000ff;
+}
 
 
 
@@ -312,6 +334,61 @@ span{
     width:200%;
 }
 
+.lists {}
 
+.flexy{
+  display: flex;
+  margin: 10%;
+  justify-content: space-between;
+}
 
+.bigger{
+  font-size: 33px;
+}
 
+.biggerc{
+  font-size: 33px;
+  margin-left: 25%;
+}
+
+#endStop{}
+
+#startStop{}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}

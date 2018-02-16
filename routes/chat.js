@@ -1,5 +1,5 @@
-var statusData = require ('../status-data.json');
+var statusData = require ('../data.json');
 
 exports.view = function(req, res){
-  res.render('chat', statusData)
+  res.render('chat', Data)
 };
