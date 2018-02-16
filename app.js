@@ -13,7 +13,7 @@ var handlebars = require('express3-handlebars')
 var login = require('./routes/login');
 var index = require('./routes/index');
 var chat = require('./routes/chat');
-var ncs = require('./routes/NCS');
+var ncs = require('./routes/ncs');
 // Example route
 // var user = require('./routes/user');
 
