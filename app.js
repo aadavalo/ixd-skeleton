@@ -16,8 +16,6 @@ var chat = require('./routes/chat');
 var profile = require('./routes/profile');
 var routes = require('./routes/routes');
 var ncs = require('./routes/ncs');
-var profile = require('./routes/profile');
-var routes = require('./routes/routes');
 // Example route
 // var user = require('./routes/user');
 
@@ -51,10 +49,6 @@ app.get('/profile', profile.view);
 app.get('/routes', routes.view);
 
 app.get('/NorthCampusShuttle', ncs.view)
-
-app.get('/profile', profile.view);
-
-app.get('/routes', routes.view);
 
 // Example route
 // app.get('/users', user.list);
