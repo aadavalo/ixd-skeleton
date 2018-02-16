@@ -150,15 +150,15 @@ body{
     margin: auto;
 }
 
-#stops-ul li a {
+#stops-ul li {
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: #f6f6f6;
     padding: 1px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 8px;
     color: black;
-    display: block;
+    display: inline;
 }
 
 #stops-ul li a:hover:not(.header) {
@@ -343,11 +343,11 @@ span{
 }
 
 .bigger{
-  font-size: 33px;
+  font-size: 25px;
 }
 
 .biggerc{
-  font-size: 33px;
+  font-size: 25px;
   margin-left: 25%;
 }
 
@@ -391,4 +391,9 @@ span{
     border-radius: 50%;
     background: #4CAF50;
     cursor: pointer;
+}
+
+.downC{
+  display: flex;
+  margin-left: 45%;
 }
