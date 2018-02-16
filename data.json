@@ -1,49 +1,169 @@
 {
+	"routes": [
+		{
+			"route": " North Campus Shuttle",
+			"id": "NorthCampusShuttle"
+		},
+		{
+			"route": "Mesa Shuttle",
+			"id": "Mesa"
+		},
+		{
+			"route": "Scouth Campus Shuttle",
+			"id": "SouthCampusShuttle"
+		}
+	],
 
-	"NorthCampusShuttle": [
+	"NorthCampusShuttleI": [
 		{
 			"stop": "P 704 Regents Parking",
 			"number": "14",
-			"name": "North Campus Shuttle"
+			"name": "North Campus Shuttle",
+			"id": "1"
 		},
 		{
-			"stop": "Lot P510/Canyonview (W)"
+			"stop": "Lot P510/Canyonview (W)",
+			"id": "2"
 		},
 		{
-			"stop": "Price Center (W)"
+			"stop": "Price Center (W)",
+			"id": "3"
 		},
 		{
-			"stop": "Warren Apartments (CCW)"
+			"stop": "Warren Apartments (CCW)",
+			"id": "4"
 		},
 		{
-			"stop": "Hopkins Structure (CCW)"
+			"stop": "Hopkins Structure (CCW)",
+			"id": "5"
 		},
 		{
-			"stop": "North Point (CCW)"
+			"stop": "North Point (CCW)",
+			"id": "6"
 		},
 		{
-			"stop": "Gliderport"
+			"stop": "Gliderport",
+			"id": "7"
 		},
 		{
-			"stop": "Pangea Parking Structure (CW)"
+			"stop": "Pangea Parking Structure (CW)",
+			"id": "8"
 		},
 		{
-			"stop": "ERC (CW)"
+			"stop": "ERC (CW)",
+			"id": "9"
 		},
 		{
-			"stop": "North Point (CW)"
+			"stop": "North Point (CW)",
+			"id": "10"
 		},
 		{
-			"stop": "Hopkins Structure (CW)"
+			"stop": "Hopkins Structure (CW)",
+			"id": "11"
 		},
 		{
-			"stop": "Warren Apartments (CW)"
+			"stop": "Warren Apartments (CW)",
+			"id": "12"
 		},
 		{
-			"stop": "Price Center (E)"
+			"stop": "Price Center (E)",
+			"id": "13"
 		},
 		{
-			"stop": "Athena Parking"
+			"stop": "Athena Parking",
+			"id": "14"
+		}
+	],
+	 "MesaI": [
+	 	{
+			"stop": "P 704 Regents Parking",
+			"number": "4",
+			"name": "Mesa Shuttle",
+			"id": "1"
+		},
+		{
+			"stop": "Rupertus",
+			"id": "2"
+		},
+		{
+			"stop": "Lot P703-Regents Parking",
+			"id": "3"
+		},
+		{
+			"stop": "Mesa Nueva",
+			"id": "4"
+		}
+	 ],
+	 "SouthCampusShuttleI": [
+		{
+			"stop": "South Mesa Housing",
+			"number": "17",
+			"name": "South Campus Shuttle",
+			"id": "1"
+		},
+		{
+			"stop": "Gilman & Myers (W)",
+			"id": "2"
+		},
+		{
+			"stop": "Gilman and Manderville",
+			"id": "3"
+		},
+		{
+			"stop": "Gilman & Osler",
+			"id": "4"
+		},
+		{
+			"stop": "Revelle (I)",
+			"id": "5"
+		},
+		{
+			"stop": "Coast Apts (I)",
+			"id": "6"
+		},
+		{
+			"stop": "Birch (I)",
+			"id": "7"
+		},
+		{
+			"stop": "IGPP (MTS)",
+			"id": "8"
+		},
+		{
+			"stop": "NOAA Fisheries (MTS)",
+			"id": "9"
+		},
+		{
+			"stop": "Coast Apts (MTS)",
+			"id": "10"
+		},
+		{
+			"stop": "Pacific Hall (CCW)",
+			"id": "11"
+		},
+		{
+			"stop": "Revelle Parking (E)",
+			"id": "12"
+		},
+		{
+			"stop": "Gilman/Scholars",
+			"id": "13"
+		},
+		{
+			"stop": "Gilman & Mandeville (SOM)",
+			"id": "14"
+		},
+		{
+			"stop": "Gilman & Myers (E)",
+			"id": "15"
+		},
+		{
+			"stop": "Lot P703 Regents",
+			"id": "16"
+		},
+		{
+			"stop": "Central Mesa",
+			"id": "17"
 		}
 	]
 }
