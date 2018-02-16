@@ -13,15 +13,11 @@ var handlebars = require('express3-handlebars')
 var login = require('./routes/login');
 var index = require('./routes/index');
 var chat = require('./routes/chat');
-<<<<<<< HEAD
 var profile = require('./routes/profile');
 var routes = require('./routes/routes');
-
-=======
 var ncs = require('./routes/ncs');
 var profile = require('./routes/profile');
 var routes = require('./routes/routes');
->>>>>>> 2f51967a61915bdd7221c594578e8100bcbb8286
 // Example route
 // var user = require('./routes/user');
 
@@ -51,18 +47,14 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/chat', chat.view);
-<<<<<<< HEAD
 app.get('/profile', profile.view);
 app.get('/routes', routes.view);
-=======
 
 app.get('/NorthCampusShuttle', ncs.view)
 
 app.get('/profile', profile.view);
 
 app.get('/routes', routes.view);
-
->>>>>>> 2f51967a61915bdd7221c594578e8100bcbb8286
 
 // Example route
 // app.get('/users', user.list);
