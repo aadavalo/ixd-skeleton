@@ -19,6 +19,20 @@
     	<div id="mySidenav" class="sidenav">
     	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     		<a href="#">Search Routes</a>
+    		<div class="topnav">
+	          <div class = "search-container">
+	              <input type="text" id="search-p" onblur="this.value=''" onkeyup= "search()" placeholder="Search..">
+	          </div>
+        	</div>
+        	
+	      <div>
+				<ul id="routes-ul">
+					{{#each routes}}
+					<li><a href="#">{{number}}</a></li>
+					<br>
+					{{/each}}
+				</ul>
+			</div>
     	</div>
 
 
@@ -29,27 +43,12 @@
 
 
 
-		<div class="search"><span onclick="openNav()" class="button1">Search
-      		<div class="topnav">
-				<div class = "search-container">
-  					<input type="text" id="search-p" onblur="this.value=''" onkeyup= "search()" placeholder="Search..">
-				</div>
-			</div></span>
+		<div class="search"><span onclick="openNav()" class="button1">Search</span>
 		</div>
-
-		<div>
-			<ul id="routes-ul">
-				{{#each routes}}
-				<li><a href="#">{{number}}</a></li>
-				<br>
-				{{/each}}
-			</ul>
-		</div>
-
 
       <div class="favorites"><span onclick="openNav2()" class="button1">Favorites</span></div>
+    </div>
 
-     </div>
     <div id="bottom"> 
       <div class="accounts"><button class="button">Accounts</button></div>
     </div> 
