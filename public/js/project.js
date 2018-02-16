@@ -73,3 +73,7 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
+
+function updateTextInput(val) {
+    document.getElementById('textInput').value=val;
+}
