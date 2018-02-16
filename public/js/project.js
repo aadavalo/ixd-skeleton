@@ -11,7 +11,16 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+    $(".lists a").click(goToRoutes);
 
+}
+
+function goToRoutes(e) {
+    e.preventDefault();
+    var lid = $(this).closest('.lists').attr('id');
+    console.log(lid);
+    location.href = "/"+lid;
+    // get rid of 'project' from the front of the id 'project3'
 }
 
 
@@ -57,3 +66,10 @@ function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
 
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
