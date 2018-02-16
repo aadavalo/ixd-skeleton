@@ -46,8 +46,6 @@ app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/chat', chat.view);
 app.get('/profile', profile.view);
-app.get('/routes', routes.view);
-
 app.get('/NorthCampusShuttle', ncs.view)
 
 // Example route
