@@ -40,11 +40,6 @@ if ('development' == app.get('env')) {
 
 app.get('/', login.view);
 app.get('/index', index.view);
-app.get('/accounts', accounts.view);
-app.get('/settings', settings.view);
-app.get('/favorites', favorites.view);
-app.get('/routes', routes.view);
-app.get('/edit', edit.view);
 
 // Example route
 // app.get('/users', user.list);
