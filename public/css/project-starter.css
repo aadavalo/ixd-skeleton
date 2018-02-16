@@ -110,25 +110,26 @@ body{
   padding-top: 8%;
 }
 
+#routes-p{
+  margin-left: 18%;
+}
 
 #routes-ul {
     display: none;
-    top: 25px;
-    right: 8;
     position: absolute;
     float: right;
-	list-style-type: none;
+	 list-style-type: none;
     padding: 0px;
-    margin: 50px;
+    margin: auto;
 }
 
 #routes-ul li a {
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: #f6f6f6;
-    padding: 8px;
+    padding: 1px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 40px;
     color: black;
     display: block;
 }
@@ -234,7 +235,7 @@ span{
   overflow: hidden;
   background-color: #e9e9e9;
   width: 40%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 
@@ -264,11 +265,6 @@ span{
 .topnav .search-container {
   float: right;
 }
-
-.topnav input[type=text]:focus{
-    width:350px;
-}
-
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {
@@ -312,8 +308,9 @@ span{
     transition: width 0.4s ease-in-out;
 }
 
-
-
+.topnav input[type=text]:focus{
+    width:200%;
+}
 
 
 

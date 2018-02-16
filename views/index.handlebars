@@ -21,16 +21,17 @@
 	          <div class = "search-container">
 	              <input type="text" id="search-p" onblur="this.value=''" onkeyup= "search()" placeholder="Search..">
 	          </div>
+            
         	</div>
-        	
-	      <div>
-				<ul id="routes-ul">
-					{{#each routes}}
-					<li><a href="#">{{number}}</a></li>
-					<br>
-					{{/each}}
-				</ul>
-			</div>
+          <br>
+          <div id="routes-p">
+              <ul id="routes-ul">
+              {{#each NorthCampusShuttle}}
+              <li><a href="#">{{stop}}</a></li>
+              <br>
+              {{/each}}
+              </ul>
+            </div>
     	</div>
 
 
