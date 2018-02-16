@@ -16,6 +16,13 @@
     <b class= "U-P">Username</b>
     <input type="text" placeholder="Enter Username" required>
 
+    
+    <p class="facebookLogin">
+        Please login through Facebook
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+    </p>
+
     <b class= "U-P">Password</b>
     <input type="password" placeholder="Enter Password" required>
         
@@ -26,5 +33,10 @@
 
 </form>
 
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/login.js"></script>
+{{> facebook}}
+<script src="/js/facebook.js"></script>
 </body>
 </html>

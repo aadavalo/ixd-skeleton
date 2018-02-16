@@ -14,6 +14,8 @@ var login = require('./routes/login');
 var index = require('./routes/index');
 var chat = require('./routes/chat');
 var ncs = require('./routes/ncs');
+var profile = require('./routes/profile');
+var routes = require('./routes/routes');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,7 +45,13 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/chat', chat.view);
+
 app.get('/NorthCampusShuttle', ncs.view)
+
+app.get('/profile', profile.view);
+
+app.get('/routes', routes.view);
+
 
 // Example route
 // app.get('/users', user.list);
