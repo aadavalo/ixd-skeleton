@@ -342,6 +342,7 @@ span{
   justify-content: space-between;
 }
 
+
 .bigger{
   font-size: 33px;
 }
@@ -350,6 +351,16 @@ span{
   font-size: 33px;
   margin-left: 25%;
 }
+
+a { color:black } /* Globally */
+
+/* Each state */
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:black; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
+
 
 #endStop{}
 
