@@ -11,4 +11,11 @@
 .fb-comments {
 	left:200px;
 	top: 100px;
+	bottom: 0;
+}
+
+
+div.fb-comments.fb_iframe_widget{
+	left:0;
+	top:300px;
 }
