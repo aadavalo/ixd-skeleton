@@ -17,14 +17,21 @@
 
 
 <div class="card">
-  <img src="/images/users.jpg" alt="Avatar" style="width:100%">
+  <div class="imgcontainer">
+    <img src="/images/users.jpg" alt="Avatar" class="avatar">
+  </div>
   <div class="container">
     <h4><b>John Doe</b></h4> 
     <p>Not logged in</p> 
   </div>
 </div>
 
-<form action="/index" >    
+<form action="/index" >
+  <div class="container">
+    <b class= "U-P">Username</b>
+    <input type="text" placeholder="Enter Username" required>
+
+    
     <p class="facebookLogin">
         Please login through Facebook
         <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
