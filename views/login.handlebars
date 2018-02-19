@@ -27,14 +27,10 @@
 </div>
 
 <form action="/index" >
-  <div class="container">
-    <b class= "U-P">Username</b>
-    <input type="text" placeholder="Enter Username" required>
-
-    
+  <div class="container">    
     <p class="facebookLogin">
         Please login through Facebook
-        <fb:login-button data-width="800px" scope="public_profile,email" onlogin="checkLoginState();" ><a href="login" style="text-decoration: none"></a>
+        <fb:login-button data-width="800px" data-size="large" scope="public_profile,email" onlogin="checkLoginState();" data-button-type="login_with" required><a href="login" style="text-decoration: none"></a>
         </fb:login-button>
     </p>
 
@@ -44,11 +40,8 @@
 
     <div class="fb-login-button" data-width="800px" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true" ></div>
     <b class= "U-P">Password</b>
-    <input type="password" placeholder="Enter Password" required>
         
     <button type="submit" class="pad">Login</button>
-
-    <input type="checkbox" checked="checked"> Remember me
   </div>
 
 </form>
