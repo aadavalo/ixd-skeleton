@@ -13,7 +13,6 @@ var handlebars = require('express3-handlebars')
 var login = require('./routes/login');
 var index = require('./routes/index');
 var chat = require('./routes/chat');
-var profile = require('./routes/profile');
 var ncs = require('./routes/ncs');
 var mesa = require('./routes/mesa');
 var scs = require('./routes/scs');
@@ -46,7 +45,6 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/chat', chat.view);
-app.get('/profile', profile.view);
 app.get('/NorthCampusShuttle', ncs.view);
 app.get('/Mesa', mesa.view);
 app.get('/SouthCampusShuttle', scs.view);

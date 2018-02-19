@@ -66,14 +66,8 @@ function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
 
-function updateTextInput(val) {
-    document.getElementById('textInput').value=val;
-}
+
+
+
