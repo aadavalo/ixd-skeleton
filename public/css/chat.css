@@ -17,5 +17,6 @@
 
 div.fb-comments.fb_iframe_widget{
 	left:0;
-	top:300px;
+	top:100px;
+ 	position: absolute;
 }

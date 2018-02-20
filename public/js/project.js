@@ -66,6 +66,7 @@ function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
 
+<<<<<<< HEAD
 //////////// faves stuff
 
 function addRoute () {
@@ -97,3 +98,4 @@ function init() {
 $("#endStop").click(function(){
 
 });
+

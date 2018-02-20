@@ -2,10 +2,14 @@
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '1850783788328993',
+      appId      : '152850498759237',
       cookie     : true,
       xfbml      : true,
       version    : 'v2.8'
+    });
+
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
     });
   };
 
