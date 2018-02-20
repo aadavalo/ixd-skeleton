@@ -1,5 +1,8 @@
 'use strict';
 
+
+var data = require('../data.json');
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -22,7 +25,6 @@ function goToRoutes(e) {
     location.href = "/"+lid;
     // get rid of 'project' from the front of the id 'project3'
 }
-
 
 function search() {
     var input, filter, ul, li, a, i;
@@ -55,8 +57,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-
-
 function openNav2() {
     document.getElementById("mySidenav2").style.width = "100%";
 }
@@ -66,14 +66,34 @@ function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+//////////// faves stuff
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+function addRoute () {
+    var routeURL = window.location.href;
+    var routeID = routeURL.substring(routeURL.lastIndexOf('/') +1);
 }
 
-function updateTextInput(val) {
-    document.getElementById('textInput').value=val;
+ function loadJSON(callback) {   
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', '../data.json', true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            callback.init();// Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+          }
+    };
+    xobj.send(null);  
+ }
+
+
+function init() {
+    loadJSON(function(response) {
+    // Parse JSON string into object
+    var actual_JSON = JSON.parse(response);
+ });
 }
+
+$("#endStop").click(function(){
+
+});
