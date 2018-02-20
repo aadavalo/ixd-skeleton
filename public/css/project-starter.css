@@ -124,7 +124,7 @@ body{
     background-color: #f6f6f6;
     padding: 1px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
     color: black;
     display: block;
 }
@@ -281,6 +281,9 @@ span{
 
 .topnav .search-container {
   float: right;
+  margin: auto;
+  height: 200px;
+  width: 400px;
 }
 
 @media screen and (max-width: 600px) {
@@ -309,12 +312,12 @@ span{
 
 #search-p {}
 
-.topnav input[type=text]{
-    width: 100%;
+input[type=text]{
+    width: 500px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    font-size: 40px;
+    font-size: 30px;
     box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
     background-color: white;
     background-position: 8px 8px;
@@ -323,10 +326,17 @@ span{
     padding: 10px 10px 10px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+    margin: auto;
 }
 
-.topnav input[type=text]:focus{
-    width:200%;
+input[type=text]:focus{
+    width:100%;
+}
+
+
+input#search-p{
+  margin-left: 5%;
+  margin-bottom: 30%;
 }
 
 .lists {}
@@ -394,3 +404,27 @@ span{
 }
 
 #routes-title {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Favs  */
+
+
+.favs{
+  margin-left: 40%;
+  font-size: 50px;
+  text-align: center;
+}
+
+

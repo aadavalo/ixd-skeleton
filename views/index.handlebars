@@ -13,18 +13,13 @@
   <body>
 
     <div id="top"> 
-      <div class="title"><h1>Bustle</h1></div>
+      <div class="title"><img src="/images/Logo.jpg" alt="Avatar" class="avatar"></div>
     </div>
 
     <div id="main">
-      <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">Search Routes</a>
-      	  <div class="topnav">
   	        <div class = "search-container">
-  	           <input type="text" id="search-p" onblur="this.value=''" onkeyup= "search()"placeholder="Search..">
+  	           <input type="text" id="search-p" onblur="this.value=''" onkeyup= "search()"placeholder="Search Routes to connect with">
             </div> 
-          </div>
 
           <br>
             
@@ -36,13 +31,8 @@
               {{/each}}
             </ul>
           </div>
-      </div>
-
-
-		<div id="mySidenav2" class="sidenav2">
-    		<a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
     
-        <a href="#">Favorites</a>
+        <div class="favs"> Favorites</div>
         <p id="favenote"> <b>Note:</b> To add or remove a route to your favorites, navigate to the route's page using the search option in the home page. </p>
 
       <!-- the list of current routes in favorites -->
@@ -53,11 +43,6 @@
         </div>
         {{/each}}
 
-    </div>
-
-		<div class="search"><span onclick="openNav()" class="button1">Search</span></div>
-
-    <div class="favorites"><span onclick="openNav2()" class="button1">Favorites</span></div>
 
     <br>
 
