@@ -5,10 +5,20 @@
 		<meta charset="utf-8">
   		<link href="../css/project-starter.css" rel="stylesheet">
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link href="css/chat.css" rel="stylesheet" />
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<script defer src="/js/fontawesome-all.js"></script>
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1850783788328993&autoLogAppEvents=1';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
 		<div id="fb-root"></div>
 		<div class="flexy">
 			<button>
@@ -38,13 +48,15 @@
 		</button>
 		</div>
 -->
-		<div class="downC">
-		<button> 
-			<a href="chat"> 
-				<p> Connect with Route </p>
-			</a>
-		</button>
-		</div>
+		
+	<h1 class="chatTitle"> Route Chat </h1>
+	</hr>
+
+
+	<div class="fb-comments" data-href="https://jmz-groupproject.herokuapp.com" data-width="800px" data-numposts="10" data-order-by="reverse_time"></div>
+
+
+
 	<script src = "https://code.jquery.com/jquery.js"></script>
     <script src = "../js/route.js"></script>
 </body>
