@@ -16,6 +16,8 @@ var chat = require('./routes/chat');
 var ncs = require('./routes/ncs');
 var mesa = require('./routes/mesa');
 var scs = require('./routes/scs');
+var favorites = require('./routes/favorites');
+var add = require('./routes/add');
 // Example route
 // var user = require('./routes/user');
 
@@ -48,6 +50,8 @@ app.get('/chat', chat.view);
 app.get('/NorthCampusShuttle', ncs.view);
 app.get('/Mesa', mesa.view);
 app.get('/SouthCampusShuttle', scs.view);
+app.get('/favorites', favorites.view);
+app.get('/addMesa', add.addMesa); 
 
 // Example route
 // app.get('/users', user.list);
