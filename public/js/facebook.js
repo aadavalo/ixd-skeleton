@@ -20,6 +20,7 @@ function statusChangeCallback(response) {
 
 
 function changeUser(response) {
-  $('.facebookLogin').hide();
-  $(".next").css("visibility", "visible");
+    $('.facebookLogin').hide();
+    $('.next').css("visibility", "visible");
+    $(location).attr("href",'/index');
 }
