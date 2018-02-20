@@ -1,8 +1,5 @@
 'use strict';
 
-
-var data = require('../data.json');
-
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -25,6 +22,7 @@ function goToRoutes(e) {
     location.href = "/route/"+lid;
     // get rid of 'project' from the front of the id 'project3'
 }
+
 
 function search() {
     var input, filter, ul, li, a, i;
@@ -57,6 +55,8 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
+
+
 function openNav2() {
     document.getElementById("mySidenav2").style.width = "100%";
 }
@@ -66,19 +66,13 @@ function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
 
-var routeURL = window.location.href;
-var routeName = routeURL.substring(routeURL.lastIndexOf('/') + 1);
-console.log(routeName);
-$("routes-title").html(routeName);
-
-//////////// faves stuff
-
-function addRoute () {
-    var routeURL = window.location.href;
-    var routeID = routeURL.substring(routeURL.lastIndexOf('/') +1);
+function updateTextInput(val) {
+    document.getElementById('textInput').value=val;
 }
 
-$("#endStop").click(function(){
+var routeURL = window.location.href;
+var routeName = routeURL.substring(routeURL.lastIndexOf('/') + 1);
 
-});
+document.getElementById('routes-title').innerHTML =
+'{{#each ' + routeName + '}} <h1 class="title">{{name}}</h1>';
 

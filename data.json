@@ -66,11 +66,13 @@
 
 	],
 
-	"NorthCampusShuttleI": [
+	"NorthCampusShuttle": [
+		{
+		"name": "North Campus Shuttle"
+		},
 		{
 			"stop": "P 704 Regents Parking",
 			"number": "14",
-			"name": "North Campus Shuttle",
 			"id": "1"
 		},
 		{
@@ -147,7 +149,7 @@
 			"id": "4"
 		}
 	 ],
-	 "SouthCampusShuttleI": [
+	 "SouthCampusShuttle": [
 		{
 			"stop": "South Mesa Housing",
 			"number": "17",
