@@ -11,7 +11,11 @@
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=2021739128064615&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+
+
+</script>
 
 <h1>Bustle</h1>
 
@@ -26,12 +30,10 @@
   </div>
 </div>
 
-<form action="/index" >
-  <div class="container">    
-    <p class="facebookLogin">
-        <fb:login-button data-width="800px" data-size="large" scope="public_profile,email" onlogin="checkLoginState();" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="true">
+<form action="/index" >  
+    <div class="facebookLogin">
+       <fb:login-button data-width="800px" data-size="large" onlogin="checkLoginState();" data-button-type="login_with" data-auto-logout-link="true" >
         </fb:login-button>
-    </p>
     <button type="submit" class="pad">Continue</button>
   </div>
 

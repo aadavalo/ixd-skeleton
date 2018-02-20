@@ -1,6 +1,7 @@
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
+    location.reload();
   });
 }
 
@@ -15,15 +16,12 @@ function statusChangeCallback(response) {
     // Logged into your app and Facebook.
         console.log('Successfully logged in with Facebook');
          FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
-  } else {
-      // The person is not logged into your app or we are unable to tell.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
-  }
+         
+  } 
 }
 
-function changeUser(response) {
-  $('h4').text(response.name);
-  $('img.avatar').attr("src",response.picture.data.url);
-  $('p').text("Logged In")
+function changeUser(response){
+    $('h4').text(response.name);
+    $('img.avatar').attr("src",response.picture.data.url);
+    $('p').text("Logged In");
 }
