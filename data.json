@@ -1,17 +1,69 @@
 {
-	"routes": [
-		{
-			"route": " North Campus Shuttle",
-			"id": "NorthCampusShuttle"
-		},
-		{
-			"route": "Mesa Shuttle",
+	"Mesa": [
+		{ 
 			"id": "Mesa"
 		},
 		{
-			"route": "South Campus Shuttle",
-			"id": "SouthCampusShuttle"
+			"name": "Mesa Shuttle"
+		},
+		{
+			"starred": false
 		}
+	],
+
+
+	"routes": [
+		{
+			"route": " North Campus Shuttle",
+			"id": "NorthCampusShuttle",
+			"starred": "false"
+		},
+		{
+			"route": "Mesa Shuttle",
+			"id": "Mesa",
+			"starred": "false"
+		},
+		{
+			"route": "South Campus Shuttle",
+			"id": "SouthCampusShuttle",
+			"starred": "false"
+		},
+		{
+			"route": "Arriba Shuttle",
+			"id": "Arriba",
+			"starred": "false"
+		},
+		{
+			"route": "SIO Campus Shuttle",
+			"id": "SIO",
+			"starred": "false"
+		},
+		{
+			"route": "West Campus Connector",
+			"id": "WestCampusConnector",
+			"starred": "false"
+		},
+		{
+			"route": "East Campus Connector",
+			"id": "EastCampusConnector",
+			"starred": "false"
+		},		
+		{
+			"route": "Hillcrest Medical Center Shuttle",
+			"id": "Hillcrest",
+			"starred": "false"
+		},
+		{
+			"route": "Coaster Shuttle",
+			"id": "Coaster",
+			"starred": "false"
+		},
+		{
+			"route": "Weekend Campus Loop",
+			"id":  "WeekendLoop",
+			"starred": "false"
+		}
+
 	],
 
 	"NorthCampusShuttle": [
@@ -76,7 +128,8 @@
 			"id": "14"
 		}
 	],
-	 "Mesa": [
+
+	 "MesaI": [
 	 	{
 			"stop": "P 704 Regents Parking",
 			"number": "4",
@@ -167,6 +220,15 @@
 			"stop": "Central Mesa",
 			"id": "17"
 		}
+	],
+
+
+	"favedroutes": [
+		{
+			"route": "West Campus Connector"
+		},
+		{
+			"route": "Arriba Shuttle"
+		}
 	]
 }
-

@@ -14,6 +14,8 @@ var login = require('./routes/login');
 var index = require('./routes/index');
 var chat = require('./routes/chat');
 var allroutes = require('./routes/allroutes');
+var add = require('./routes/add');
+
 // Example route
 // var user = require('./routes/user');
 
@@ -44,6 +46,7 @@ app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/chat', chat.view);
 app.get('/route/:route', allroutes.view);
+app.get('/addMesa', add.addMesa); 
 
 // Example route
 // app.get('/users', user.list);

@@ -4,31 +4,37 @@
 <link href="css/login.css" rel="stylesheet">
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=2021739128064615&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
+
+</script>
 
 <h1>Bustle</h1>
 
-<form action="/index" >
+
+<div class="card">
   <div class="imgcontainer">
     <img src="/images/users.jpg" alt="Avatar" class="avatar">
   </div>
-
   <div class="container">
-    <b class= "U-P">Username</b>
-    <input type="text" placeholder="Enter Username" required>
+    <h4><b>John Doe</b></h4> 
+    <p>Not logged in</p> 
+  </div>
+</div>
 
-    
-    <p class="facebookLogin">
-        Please login through Facebook
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+<form action="/index" >  
+    <div class="facebookLogin">
+       <fb:login-button data-width="800px" data-size="large" onlogin="checkLoginState();" data-button-type="login_with" data-auto-logout-link="true" >
         </fb:login-button>
-    </p>
-
-    <b class= "U-P">Password</b>
-    <input type="password" placeholder="Enter Password" required>
-        
-    <button type="submit" class="pad">Login</button>
-
-    <input type="checkbox" checked="checked"> Remember me
+    <button type="submit" class="pad">Continue</button>
   </div>
 
 </form>

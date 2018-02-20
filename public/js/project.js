@@ -1,5 +1,8 @@
 'use strict';
 
+
+var data = require('../data.json');
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -22,7 +25,6 @@ function goToRoutes(e) {
     location.href = "/route/"+lid;
     // get rid of 'project' from the front of the id 'project3'
 }
-
 
 function search() {
     var input, filter, ul, li, a, i;
@@ -55,8 +57,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-
-
 function openNav2() {
     document.getElementById("mySidenav2").style.width = "100%";
 }
@@ -66,8 +66,19 @@ function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
 
-console.log("Javascript connected!");
 var routeURL = window.location.href;
 var routeName = routeURL.substring(routeURL.lastIndexOf('/') + 1);
 console.log(routeName);
 $("routes-title").html(routeName);
+
+//////////// faves stuff
+
+function addRoute () {
+    var routeURL = window.location.href;
+    var routeID = routeURL.substring(routeURL.lastIndexOf('/') +1);
+}
+
+$("#endStop").click(function(){
+
+});
+
