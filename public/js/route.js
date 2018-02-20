@@ -66,8 +66,13 @@ function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
 
-console.log("Javascript connected!");
+function updateTextInput(val) {
+    document.getElementById('textInput').value=val;
+}
+
 var routeURL = window.location.href;
 var routeName = routeURL.substring(routeURL.lastIndexOf('/') + 1);
-console.log(routeName);
-$("routes-title").html(routeName);
+
+document.getElementById('routes-title').innerHTML =
+'{{#each ' + routeName + '}} <h1 class="title">{{name}}</h1>';
+
