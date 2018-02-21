@@ -22,5 +22,12 @@ function statusChangeCallback(response) {
 function changeUser(response) {
     $('.facebookLogin').hide();
     $('.next').css("visibility", "visible");
-    $(location).attr("href",'/index');
+    if(location != "http://localhost:3000/index"){
+      $(location).attr("href",'/index');
+    }
+    
+    $('h4').text(response.name);
+    $('img.fb').attr("src",response.picture.data.url);
+    $('p').text("Logged In As")
+
 }

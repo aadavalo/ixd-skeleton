@@ -12,9 +12,6 @@
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=2021739128064615&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-
-
-
 </script>
 
 <div class="imgcontainer">
@@ -22,18 +19,10 @@
 </div>
 
 
-<form action="/index" >  
-    <div class="facebookLogin">
-       <fb:login-button data-width="600px" data-size="medium" onlogin="checkLoginState();" data-button-type="login_with" data-auto-logout-link="true" >
-      </fb:login-button>
-  </div>
-
-  
-  <div class="next" style="visibility: hidden">
-    <button type="submit" class="pad">Continue</button>
-  </div>
-
-</form>
+<div class="facebookLogin">
+  <fb:login-button data-width="600px" data-size="medium" onlogin="checkLoginState();" data-button-type="login_with" data-auto-logout-link="true" >
+  </fb:login-button>
+</div>
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
