@@ -5,13 +5,20 @@
     <meta charset="utf-8">
   	<link href="css/project-starter.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
     <link rel="stylesheet" href="css/favorites.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="/js/fontawesome-all.js"></script>
   </head>
 
   <body>
-
     <div id="top"> 
       <div class="title"><img src="/images/Logo.jpg" alt="Avatar" class="avatar"></div>
     </div>
@@ -48,10 +55,25 @@
     <br>
 
     <div id="bottom"> 
-      <div class="accounts"><button class="button"><a href="/" style="text-decoration: none">Log Out</a></button></div>
+
+        <div class="log">
+          <a href="/" class="btn btn-info btn-sm">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+          </a>
+        </div>
+
+      <div class="card">
+        <img src="/images/users.jpg" alt="Avatar" class="fb" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4> 
+          <p>Not Logged In</p> 
+        </div>
+      </div>
     </div> 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src = "js/project.js"></script>
+    {{> facebook}}
+    <script src="/js/facebook.js"></script>
   </body>
 
 </html>

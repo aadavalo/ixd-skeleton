@@ -8,5 +8,3 @@ exports.addFavorite = function(req, res) {
 	console.log(newfav);
 	res.render("allroutes", newfav);
 }
-///////////////////////////////////////////////////////
-

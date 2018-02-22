@@ -92,7 +92,9 @@ img {
 
 
 .facebookLogin{
-    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 90%;
 }
 
 
