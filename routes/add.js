@@ -5,6 +5,6 @@ exports.addFavorite = function(req, res) {
 		"route": req.query.bus
 	};
 	data.favedroutes.push(newfav);
+	console.log(newfav);
 	res.render("allroutes", newfav);
 }
-///////////////////////////////////////////////////////

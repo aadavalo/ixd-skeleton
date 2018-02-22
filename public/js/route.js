@@ -3,7 +3,7 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
-
+    changeTitle();
 })
 
 /*
@@ -11,16 +11,21 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
-    $(".lists a").click(goToRoutes);
+    $("#endStop").click(addToFavs);
 
 }
 
-function goToRoutes(e) {
+function changeTitle(){
+    var u = window.location.href;
+    var newU = u.substr(u.lastIndexOf('=')+1);
+    var finalU = newU.split('%20').join(' ');
+    $("#routes-title").html(finalU);
+}
+
+function addToFavs(e) {
     e.preventDefault();
-    var lid = $(this).closest('.lists').attr('id');
-    console.log(lid);
-    location.href = "/route/"+lid;
-    // get rid of 'project' from the front of the id 'project3'
+    var q = "/fav";
+    $.get(q);
 }
 
 
@@ -70,9 +75,6 @@ function updateTextInput(val) {
     document.getElementById('textInput').value=val;
 }
 
-var routeURL = window.location.href;
-var routeName = routeURL.substring(routeURL.lastIndexOf('/') + 1);
 
-document.getElementById('routes-title').innerHTML =
-'{{#each ' + routeName + '}} <h1 class="title">{{name}}</h1>';
+
 
