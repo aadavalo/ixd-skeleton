@@ -12,7 +12,6 @@ var handlebars = require('express3-handlebars')
 
 var login = require('./routes/login');
 var index = require('./routes/index');
-var chat = require('./routes/chat');
 var allroutes = require('./routes/allroutes');
 var add = require('./routes/add');
 
@@ -44,9 +43,8 @@ if ('development' == app.get('env')) {
 
 app.get('/', login.view);
 app.get('/index', index.view);
-app.get('/chat', chat.view);
-app.get('/route/:route', allroutes.view);
-app.get('/addMesa', add.addMesa); 
+app.get('/route*', allroutes.view);
+app.get('/fav', add.addFavorite); 
 
 // Example route
 // app.get('/users', user.list);

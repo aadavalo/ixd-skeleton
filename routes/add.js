@@ -1,18 +1,10 @@
 var data = require('../data.json');
 
 exports.addfavorite = function(req, res) {
-	var newfavorite = {
-		"route": req.query.route
+	var newfav = {
+		"route": req.query.bus
 	};
-	data.favedroutes.push(newfavorite);
+	data.favedroutes.push(newfav);
+	res.render("allroutes", newfav);
 }
 ///////////////////////////////////////////////////////
-
-
-exports.addMesa = function(req, res) {
-	var newfavorite = {
-		"route": "Mesa Shuttle"
-	};
-	console.log(newfavorite);
-	data.favedroutes.push(newfavorite);
- }
