@@ -1,6 +1,6 @@
 var data = require('../data.json');
 
-exports.addfavorite = function(req, res) {
+exports.addFavorite = function(req, res) {
 	var newfav = {
 		"route": req.query.bus
 	};
