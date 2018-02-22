@@ -17,9 +17,9 @@ function initializePage() {
 
 function goToRoutes(e) {
     e.preventDefault();
-    var lid = $(this).closest('.lists').attr('id');
-    console.log(lid);
-    location.href = "/route/"+lid;
+    var rid = $(this).closest('.lists').attr('id');
+    console.log(rid);
+    location.href="/route?bus="+rid;
     // get rid of 'project' from the front of the id 'project3'
 }
 

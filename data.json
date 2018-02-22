@@ -1,66 +1,65 @@
 {
-	"Mesa": [
-		{ 
-			"id": "Mesa"
-		},
-		{
-			"name": "Mesa Shuttle"
-		},
-		{
-			"starred": false
-		}
-	],
-
 
 	"routes": [
 		{
-			"route": " North Campus Shuttle",
-			"id": "NorthCampusShuttle",
+			"route": "North Campus Shuttle",
+			"url": "NorthCampusShuttle",
+			"id": 1,
 			"starred": "false"
+
 		},
 		{
 			"route": "Mesa Shuttle",
-			"id": "Mesa",
+			"url": "Mesa",
+			"id": 2,
 			"starred": "false"
 		},
 		{
 			"route": "South Campus Shuttle",
-			"id": "SouthCampusShuttle",
+			"url": "SouthCampusShuttle",
+			"id": 3,
 			"starred": "false"
 		},
 		{
 			"route": "Arriba Shuttle",
-			"id": "Arriba",
+			"url": "Arriba",
+			"id": 4,
 			"starred": "false"
 		},
 		{
 			"route": "SIO Campus Shuttle",
-			"id": "SIO",
+			"url": "SIO",
+			"id": 5,
 			"starred": "false"
 		},
 		{
 			"route": "West Campus Connector",
-			"id": "WestCampusConnector",
+			"url": "WestCampusConnector",
+			"id": 6,
 			"starred": "false"
 		},
 		{
 			"route": "East Campus Connector",
-			"id": "EastCampusConnector",
+			"url": "EastCampusConnector",
+			"id": 7,
 			"starred": "false"
 		},		
 		{
 			"route": "Hillcrest Medical Center Shuttle",
-			"id": "Hillcrest",
+			"url": "Hillcrest",
+			"id": 8,
 			"starred": "false"
 		},
 		{
 			"route": "Coaster Shuttle",
-			"id": "Coaster",
+			"url": "Coaster",
+			"id": 9,
 			"starred": "false"
 		},
 		{
 			"route": "Weekend Campus Loop",
-			"id":  "WeekendLoop",
+			"url":  "WeekendLoop",
+			"id": 10,
 			"starred": "false"
 		}
 

@@ -24,13 +24,15 @@
           <div id="routes-p">
             <ul id="routes-ul">
               {{#each routes}}
-              <li class="lists" id="{{id}}"><a href="#">{{route}} </a></li>
+              <li class="lists" id="{{route}}"><a href="#">{{route}} </a></li>
               <br>
               {{/each}}
             </ul>
           </div>
+          <div id="mySidenav2" class="sidenav2">
+        <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
     
-        <div class="favs"> Favorites</div>
+        <a href="#">Favorites</a>
         <p id="favenote"> <b>Note:</b> To add or remove a route to your favorites, navigate to the route's page using the search option in the home page. </p>
 
       <!-- the list of current routes in favorites -->
@@ -40,6 +42,7 @@
           </br>
         </div>
         {{/each}}
+      </div>
 
 
     <br>
