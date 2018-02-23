@@ -8,7 +8,6 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-
 var login = require('./routes/login');
 var index = require('./routes/index');
 var allroutes = require('./routes/allroutes');
@@ -39,11 +38,31 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-
+var data = require('./data.json');
 app.get('/', login.view);
 app.get('/index', index.view);
-app.get('/route*', allroutes.view);
-app.get('/fav', add.addFavorite); 
+app.get('/route*', function(req,res){
+	res.render('allroutes', data);
+	var bus = req.query.bus;
+});
+app.get('/fav*', function(req, res) {
+	var newfav = {
+		"route": req.query.bus
+	};
+
+	if(data.favedroutes.length === 0){
+		data.favedroutes.push(newfav);
+	}
+	else{
+		data.favedroutes.forEach(function(route){
+			if (route.route===newfav.route) {
+			}
+			else {
+				data.favedroutes.push(newfav);
+			}
+		});
+	}
+});
 
 // Example route
 // app.get('/users', user.list);
