@@ -24,7 +24,10 @@ function changeTitle(){
 
 function addToFavs(e) {
     e.preventDefault();
-    var q = "/fav";
+    var u = window.location.href;
+    var newU = u.substr(u.lastIndexOf('=')+1);
+    var finalU = newU.split('%20').join(' ');
+    var q = "/fav?bus=" +finalU;
     $.get(q);
 }
 
