@@ -67,85 +67,61 @@
 
 	"NorthCampusShuttle": [
 		{
-		"name": "North Campus Shuttle"
+			"stop": "P 704 Regents Parking"
 		},
 		{
-			"stop": "P 704 Regents Parking",
-			"number": "14",
-			"id": "1"
+			"stop": "Lot P510/Canyonview (W)"
 		},
 		{
-			"stop": "Lot P510/Canyonview (W)",
-			"id": "2"
+			"stop": "Price Center (W)"
 		},
 		{
-			"stop": "Price Center (W)",
-			"id": "3"
+			"stop": "Warren Apartments (CCW)"
 		},
 		{
-			"stop": "Warren Apartments (CCW)",
-			"id": "4"
+			"stop": "Hopkins Structure (CCW)"
 		},
 		{
-			"stop": "Hopkins Structure (CCW)",
-			"id": "5"
+			"stop": "North Point (CCW)"
 		},
 		{
-			"stop": "North Point (CCW)",
-			"id": "6"
+			"stop": "Gliderport"
 		},
 		{
-			"stop": "Gliderport",
-			"id": "7"
+			"stop": "Pangea Parking Structure (CW)"
 		},
 		{
-			"stop": "Pangea Parking Structure (CW)",
-			"id": "8"
+			"stop": "ERC (CW)"
 		},
 		{
-			"stop": "ERC (CW)",
-			"id": "9"
+			"stop": "North Point (CW)"
 		},
 		{
-			"stop": "North Point (CW)",
-			"id": "10"
+			"stop": "Hopkins Structure (CW)"
 		},
 		{
-			"stop": "Hopkins Structure (CW)",
-			"id": "11"
+			"stop": "Warren Apartments (CW)"
 		},
 		{
-			"stop": "Warren Apartments (CW)",
-			"id": "12"
+			"stop": "Price Center (E)"
 		},
 		{
-			"stop": "Price Center (E)",
-			"id": "13"
-		},
-		{
-			"stop": "Athena Parking",
-			"id": "14"
+			"stop": "Athena Parking"
 		}
 	],
 
 	 "MesaShuttle": [
 	 	{
-			"stop": "P 704 Regents Parking",
-			"number": "4",
-			"name": "Mesa Shuttle",
-			"id": "1"
+			"stop": "P 704 Regents Parking"
 		},
 		{
-			"stop": "Rupertus",
-			"id": "2"
+			"stop": "Rupertus"
 		},
 		{
-			"stop": "Lot P703-Regents Parking",
-			"id": "3"
+			"stop": "Lot P703-Regents Parking"
 		},
 		{
-			"stop": "Mesa Nueva",
-			"id": "4"
+			"stop": "Mesa Nueva"
 		}
 	 ],
 	 "SouthCampusShuttle": [
@@ -222,5 +198,7 @@
 	],
 
 
-	"favedroutes": []
+	"favedroutes": [],
+
+	"currentStops": []
 }

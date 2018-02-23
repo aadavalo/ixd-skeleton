@@ -4,6 +4,7 @@
 $(document).ready(function() {
 	initializePage();
     changeTitle();
+    getStops();
 })
 
 /*
@@ -12,6 +13,8 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
     $("#endStop").click(addToFavs);
+    $(".dropbtn").click(dropDownButt);
+    
 
 }
 
@@ -28,6 +31,14 @@ function addToFavs(e) {
     var newU = u.substr(u.lastIndexOf('=')+1);
     var finalU = newU.split('%20').join(' ');
     var q = "/fav?bus=" +finalU;
+    $.get(q);
+}
+
+function getStops(){
+    var u = window.location.href;
+    var newU = u.substr(u.lastIndexOf('=')+1);
+    var finalU = newU.split('%20').join('');
+    var q = "stops?stop=" + finalU;
     $.get(q);
 }
 
@@ -78,6 +89,24 @@ function updateTextInput(val) {
     document.getElementById('textInput').value=val;
 }
 
+function dropDownButt() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
 
 

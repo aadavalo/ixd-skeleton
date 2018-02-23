@@ -12,15 +12,21 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
     $(".lists a").click(goToRoutes);
+    $(".favedroutes button").click(goToFaves);
 
 }
 
 function goToRoutes(e) {
     e.preventDefault();
     var rid = $(this).closest('.lists').attr('id');
-    console.log(rid);
     location.href="/route?bus="+rid;
-    // get rid of 'project' from the front of the id 'project3'
+}
+
+function goToFaves(e){
+    e.preventDefault();
+    var rid=$(this).closest('.favebutton').attr('id');
+    location.href="/route?bus="+rid;
+
 }
 
 function search() {

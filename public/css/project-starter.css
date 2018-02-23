@@ -16,11 +16,15 @@
     top: 0;
 }
 
+
+
+
+
+
 #main{
     height: 60%;
     width: 100%;
     background-color: #ffffff;
-    min-height: 800px;
 }
 
 #bottom{
@@ -142,7 +146,7 @@ img.avatar{
     background-color: #555;
     padding: 1px;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 25px;
     color: white;
     display: block;
 }
@@ -210,20 +214,10 @@ span{
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover , .sidenav2 a:hover {
-    color: #f1f1f1;
 
-}
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn,.sidenav2 .closebtn2{
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    padding-right: 10px
-}
+
 
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -354,7 +348,9 @@ input[type=text]:focus{
 input#search-p{
 }
 
-.lists {}
+.lists {
+  margin: -5px;
+}
 
 .flexy{
   display: flex;
@@ -441,16 +437,15 @@ input#search-p{
 
 div.search-container{
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5%;
 }
 
 
 
 
 .log{
-  top:5px;
-  right: 5px;
-  position: absolute;
+ float: right;
+ margin-top: 3%;
 }
 
 
@@ -475,7 +470,87 @@ img {
 
 
 
+div.container{
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center; 
+}
 
+
+
+
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 42px;
+    font-size: 10px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    margin-top: 2%;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+
+
+
+h4{
+  font-size: 13px;
+}
+
+
+
+span.glyphicon.glyphicon-log-out{
+
+  width: 23px;
+  font-size: 21px;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
 
 
 

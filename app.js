@@ -63,6 +63,14 @@ app.get('/fav*', function(req, res) {
 		});
 	}
 });
+app.get('/stops*', function(req, res){
+	data.currentStops = [];
+	var routeName = req.query.stop;
+	data.MesaShuttle.forEach(function(stop){
+		data.currentStops.push(stop);
+	});
+	console.log(data.currentStops);
+});
 
 // Example route
 // app.get('/users', user.list);
