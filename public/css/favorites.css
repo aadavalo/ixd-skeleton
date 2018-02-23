@@ -1,6 +1,6 @@
 /*id for the paragraph to tell users how to add a route*/
 #favenote {
-	border: 0.5px solid gray;
+	border: 2px solid black;
 	padding: 5px 5px;
 	color: gray;
 	background-color: none;
@@ -9,22 +9,50 @@
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	bottom: 0;
+	margin-top: 9%;
 }
 
 /* how to display the buttons*/
 .favebutton {
-	position: relative;
 	border: 0.2px solid gray;
 	padding: 5px 5px;
 	color: black;
-	background-color: #9b9b9b;
+	background-color: #eee;
 	font-size: 20px;
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	display: block;
 }
 
 #addFaveRoute {
 	background-color: yellow;
+}
+
+
+.favedroutes{
+    /* text-align: center; */
+    margin: auto;
+}
+
+
+
+
+h1{
+	text-align: center;
+	font-style: italic;
+}
+
+
+
+.box{
+	border: 2px solid black;
+	padding: 5px 5px;
+	color: gray;
+	background-color: none;
+	font-size: 16px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	min-height: 300px;
 }

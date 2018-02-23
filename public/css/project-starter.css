@@ -354,7 +354,7 @@ input#search-p{
 
 .flexy{
   display: flex;
-  margin: 10%;
+  margin: 2%;
   justify-content: space-between;
 }
 
@@ -414,7 +414,17 @@ input#search-p{
   margin-left: 45%;
 }
 
-#routes-title {}
+#routes-title {
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+}
+
+
+
+
+
+
 
 
 
@@ -437,7 +447,7 @@ input#search-p{
 
 div.search-container{
   text-align: center;
-  padding-top: 5%;
+  padding-top: 8%;
 }
 
 
@@ -551,6 +561,20 @@ span.glyphicon.glyphicon-log-out{
 .dropdown a:hover {background-color: #ddd}
 
 .show {display:block;}
+
+
+#stylefb{
+  background-color: #eee;
+}
+
+
+.fb_iframe_widget {
+    display: inline-block;
+    position: static;
+}
+
+
+
 
 
 
