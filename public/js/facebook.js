@@ -27,6 +27,5 @@ function changeUser(response) {
     }
     $('h5').text(response.name);
     $('img.fb').attr("src",response.picture.data.url);
-    $('p').text("Logged In")
 
 }

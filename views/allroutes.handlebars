@@ -8,6 +8,7 @@
     	<link href="../css/chat.css" rel="stylesheet" />
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<script defer src="/js/fontawesome-all.js"></script>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -17,18 +18,22 @@
 		  js = d.createElement(s); js.id = id;
 		  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1850783788328993&autoLogAppEvents=1';
 		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<div id="top"> 
+      		<div class="title"><img src="/images/Logo.jpg" alt="Avatar" class="avatar"></div>
+    	</div>
+
 
 		<div id="fb-root"></div>
 		<div class="flexy">
 			<button>
-				<a href="#" id="endStop"> 
-					<p> Favorites </p>
+				<a href="#" id="endStop"> <i class="fa fa-star" style="font-size:48px;color:black"></i>
 				</a>
 			</button>
 			<button>
-				<a href="/index" id="startStop"> 
-					<p> Home </p>
+				<a href="/index" id="startStop"> <i class="fa fa-home" style="font-size:48px;color:black"></i>
 				</a>
 			</button>
 		</div>
@@ -48,13 +53,11 @@
 		</button>
 		</div>
 -->
-		
-	<h1 class="chatTitle"> Route Chat </h1>
-	</hr>
 
 
-	<div class="fb-comments" data-href="https://bustle.herokuapp.com" data-width="800px" data-numposts="10" data-order-by="reverse_time"></div>
-
+	<div id ="stylefb">
+		<div class="fb-comments" data-href="https://bustle.herokuapp.com" data-width="800px" data-numposts="10" data-order-by="reverse_time" style="position: static; "></div>
+	</div>
 
 
 	<script src = "https://code.jquery.com/jquery.js"></script>
