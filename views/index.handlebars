@@ -57,11 +57,11 @@
         <p id="favenote"> <b>Note:</b> To add or remove a route to your favorites, navigate to the route's page using the search option in the home page. </p>
 
       <!-- the list of current routes in favorites -->
-      <div>
+
        {{#each favedroutes}}
         <div class="favedroutes">
-          <button class="favebutton" onclick="something to open route page">{{route}}</button>
-          </br>
+            <button class="favebutton" id="{{route}}">{{route}}</button>
+            </br>
         </div>
         {{/each}}
     </div>

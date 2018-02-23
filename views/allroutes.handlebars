@@ -20,6 +20,7 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 
 		<div id="fb-root"></div>
+
 		<div class="flexy">
 			<button>
 				<a href="#" id="endStop"> 
@@ -35,6 +36,16 @@
 
 		<div id="routes-title"></div>
 <!--
+		<div class="dropdown">
+			{{#each currentStops}}
+			<button class="dropbtn"><a href = "#">Stop</button></a>
+  			<div id="myDropdown" class="dropdown-content">
+  			{{stop}}
+  			</div>
+  			{{/each}}
+		</div>
+	-->
+<!--
 		<div class="flexy">
 		<button >
 			<a href="#" id="endStop"> 
@@ -49,8 +60,6 @@
 		</div>
 -->
 		
-	<h1 class="chatTitle"> Route Chat </h1>
-	</hr>
 
 
 	<div class="fb-comments" data-href="https://bustle.herokuapp.com" data-width="800px" data-numposts="10" data-order-by="reverse_time"></div>
