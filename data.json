@@ -128,7 +128,7 @@
 		}
 	],
 
-	 "MesaI": [
+	 "MesaShuttle": [
 	 	{
 			"stop": "P 704 Regents Parking",
 			"number": "4",
@@ -222,12 +222,5 @@
 	],
 
 
-	"favedroutes": [
-		{
-			"route": "West Campus Connector"
-		},
-		{
-			"route": "Arriba Shuttle"
-		}
-	]
+	"favedroutes": []
 }
