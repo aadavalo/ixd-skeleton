@@ -54,14 +54,16 @@
           </div>
     
 
+
         <h1> Favorites </h1>
 
       
     <div class="box">
+
        {{#each favedroutes}}
         <div class="favedroutes">
-          <button class="favebutton" onclick="something to open route page">{{route}}</button>
-          </br>
+            <button class="favebutton" id="{{route}}">{{route}}</button>
+            </br>
         </div>
         {{/each}}
     </div>
