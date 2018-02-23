@@ -25,7 +25,7 @@ function changeUser(response) {
     if(location != "http://localhost:3000/index"){
       $(location).attr("href",'/index');
     }
-    $('h4').text(response.name);
+    $('h5').text(response.name);
     $('img.fb').attr("src",response.picture.data.url);
     $('p').text("Logged In")
 

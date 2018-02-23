@@ -21,6 +21,22 @@
   <body>
     <div id="top"> 
       <div class="title"><img src="/images/Logo.jpg" alt="Avatar" class="avatar"></div>
+
+      <div class="chip">
+        <img src="/images/users.jpg" alt="Person" class= "fb" width="96" height="96">
+          <div class="container">
+            <h5><b>John Doe</b></h5> 
+          </div>
+      </div>
+
+
+
+
+     <div class="log">
+        <a href="/" class="btn btn-info btn-sm">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+      </div>
     </div>
 
     <div id="main">
@@ -36,8 +52,6 @@
               {{/each}}
             </ul>
           </div>
-          <div id="mySidenav2" class="sidenav2">
-        <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
     
         <a href="#">Favorites</a>
         <p id="favenote"> <b>Note:</b> To add or remove a route to your favorites, navigate to the route's page using the search option in the home page. </p>
@@ -49,27 +63,8 @@
           </br>
         </div>
         {{/each}}
-      </div>
+    </div>
 
-
-    <br>
-
-    <div id="bottom"> 
-
-        <div class="log">
-          <a href="/" class="btn btn-info btn-sm">
-            <span class="glyphicon glyphicon-log-out"></span> Log out
-          </a>
-        </div>
-
-      <div class="card">
-        <img src="/images/users.jpg" alt="Avatar" class="fb" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4> 
-          <p>Not Logged In</p> 
-        </div>
-      </div>
-    </div> 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src = "js/project.js"></script>
     {{> facebook}}
