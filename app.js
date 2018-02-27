@@ -64,8 +64,6 @@ app.get('/fav*', function(req, res) {
 			}
 		});
 		if (i===1){
-			console.log("yes");
-			delete data.favedroutes[lengy];
 			data.favedroutes.splice(lengy, 1);
 		}
 		else{data.favedroutes.push(newfav);}
