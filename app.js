@@ -55,12 +55,16 @@ app.get('/fav*', function(req, res) {
 	}
 	else{
 		var i = 0;
+		var lengy = 0;
 		data.favedroutes.forEach(function(route){
 			if (route.route===newfav.route) {
+				lengy = data.favedroutes.indexOf(route);
+				console.log(lengy);
 				i=1;
 			}
 		});
 		if (i===1){
+			data.favedroutes.splice(lengy, 1);
 		}
 		else{data.favedroutes.push(newfav);}
 	}
