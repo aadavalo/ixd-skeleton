@@ -552,6 +552,10 @@ span.glyphicon.glyphicon-log-out{
 
 .show {display:block;}
 
+.container .accessibility-section {
+    width: 70%;
+    margin: auto;
+}
 
 
 
