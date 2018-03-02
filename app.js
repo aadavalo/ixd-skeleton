@@ -43,8 +43,12 @@ if ('development' == app.get('env')) {
 var data = require('./data.json');
 app.get('/', login.view);
 app.get('/index', index.view);
-app.get('/route*', function(req,res){
+app.get('/routeA*', function(req,res){
 	res.render('allroutes', data);
+	var bus = req.query.bus;
+});
+app.get('/routeB*', function(req,res){
+	res.render('page_B', data);
 	var bus = req.query.bus;
 });
 app.get('/fav*', function(req, res) {
@@ -79,10 +83,6 @@ app.get('/stops*', function(req, res){
 	});
 	console.log(data.currentStops);
 });
-
-
-app.get('/page_B', page_B.view);
-app.get('/page_A', page_A.view);
 
 // Example route
 // app.get('/users', user.list);

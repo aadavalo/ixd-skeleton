@@ -19,13 +19,13 @@ function initializePage() {
 function goToRoutes(e) {
     e.preventDefault();
     var rid = $(this).closest('.lists').attr('id');
-    location.href="/route?bus="+rid;
+    location.href="/routeA?bus="+rid;
 }
 
 function goToFaves(e){
     e.preventDefault();
     var rid=$(this).closest('.favebutton').attr('id');
-    location.href="/route?bus="+rid;
+    location.href="/routeA?bus="+rid;
 
 }
 
