@@ -46,6 +46,9 @@ app.get('/index', index.view);
 app.get('/routeA*', function(req,res){
 	res.render('allroutes', data);
 	var bus = req.query.bus;
+	// something like
+	// make a list based on data."bus" and 
+	// display or fill in this list somewhere
 });
 app.get('/routeB*', function(req,res){
 	res.render('page_B', data);
@@ -90,3 +93,5 @@ app.get('/stops*', function(req, res){
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+//pls
