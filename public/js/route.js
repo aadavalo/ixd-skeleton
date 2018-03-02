@@ -66,12 +66,12 @@ $("#search-p").focus(function() {
 })
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%";
 }
 
 /* Close/hide the sidenav */
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("myNav").style.width = "0";
 }
 
 

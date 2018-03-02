@@ -12,6 +12,8 @@ var login = require('./routes/login');
 var index = require('./routes/index');
 var allroutes = require('./routes/allroutes');
 var add = require('./routes/add');
+var page_B = require('./routes/page_B');
+var page_A = require('./routes/page_A');
 
 // Example route
 // var user = require('./routes/user');
@@ -77,6 +79,10 @@ app.get('/stops*', function(req, res){
 	});
 	console.log(data.currentStops);
 });
+
+
+app.get('/page_B', page_B.view);
+app.get('/page_A', page_A.view);
 
 // Example route
 // app.get('/users', user.list);

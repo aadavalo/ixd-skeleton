@@ -65,13 +65,18 @@
 		</button>
 		</div>
 -->
-
-
-
-	<div id ="stylefb">
-		<div class="fb-comments" data-href="https://bustle.herokuapp.com/" data-width="800px" data-numposts="10" data-order-by="reverse_time" style="position: static; "></div>
+	
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+	    <a href="#"> 
+	    <div id ="stylefb">
+			<div class="fb-comments" data-href="https://bustle.herokuapp.com/" data-width="800px" data-numposts="10" data-order-by="reverse_time" style="position: static; "></div>
+		</div></a>
+	  </div>
 	</div>
 
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9658; Chat with others</span>
 
 	<script src = "https://code.jquery.com/jquery.js"></script>
     <script src = "../js/route.js"></script>
