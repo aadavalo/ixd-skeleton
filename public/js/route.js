@@ -116,4 +116,8 @@ function notifyDriver(e) {
     alert("Notified Driver!");
 }
 
-
+function setLocally(){
+    $(".favourite_icon").click(function(){
+    $(this).css({"color": "yellow"}).removeClass('fa-star-o').addClass('fa-star');
+    });
+}
