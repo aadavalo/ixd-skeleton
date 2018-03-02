@@ -35,6 +35,8 @@ div.fb-comments.fb_iframe_widget{
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+    top: 30%;
+    height: 100%;
 }
 
 .overlay-content {
@@ -73,4 +75,19 @@ div.fb-comments.fb_iframe_widget{
     top: 15px;
     right: 35px;
   }
+}
+
+
+
+
+#notifybutton{
+    background-color: #DDE;
+    width: 50%;
+}
+
+
+
+
+.accessibility-section{
+    margin-top: -19px;
 }

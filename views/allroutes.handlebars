@@ -46,7 +46,6 @@
                 <form id="statusformId" onsubmit="notifyDriver();return false;">
                     <fieldset id="ridestatus">
                         <legend><h3> Currently, for this ride: </h3></legend>
-                        
                         <input type="checkbox"> I have a wheelchair <br>
                         <input type="checkbox"> I have a bike <br>
                         <input type="checkbox"> I have a walker <br>
@@ -60,8 +59,6 @@
         </div>
 
 		<div class="dropdown">
-			
-			<button class="dropbtn"><a href = "#">Stop</button></a>
   			<div id="myDropdown" class="dropdown-content">
   			{{#each currentStops}}
   			<a href="#">{{stop}}</a>

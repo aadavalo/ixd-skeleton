@@ -41,9 +41,26 @@
 
 		<div id="routes-title"></div>
 
+		<div class="container">
+            <div class="accessibility-section">
+                <form id="statusformId" onsubmit="notifyDriver();return false;">
+                    <fieldset id="ridestatus">
+                        <legend><h3> Currently, for this ride: </h3></legend>
+                        <input type="checkbox"> I have a wheelchair <br>
+                        <input type="checkbox"> I have a bike <br>
+                        <input type="checkbox"> I have a walker <br>
+                        <input type="checkbox"> I have a stroller <br><br>
+                        <a href = "#">
+                        <button id="notifybutton" >Notify Driver</button>
+                    	</a>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+
 		<div class="dropdown">
 			
-			<button class="dropbtn"><a href = "#">Stop</button></a>
   			<div id="myDropdown" class="dropdown-content">
   			{{#each currentStops}}
   			<a href="#">{{stop}}</a>
@@ -76,7 +93,7 @@
 	  </div>
 	</div>
 
-	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9658; Chat with others</span>
+	<span style="font-size:30px;cursor:pointer;position: absolute;top:70%;" onclick="openNav()">&#9658; Chat with others</span>
 
 	<script src = "https://code.jquery.com/jquery.js"></script>
     <script src = "../js/route.js"></script>
