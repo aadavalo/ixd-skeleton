@@ -14,7 +14,7 @@ function initializePage() {
 	console.log("Javascript connected!");
     $("#endStop").click(addToFavs);
     $(".dropbtn").click(dropDownButt);
-    
+    $("#notifybutton").click(notifyDriver);
 
 }
 
@@ -108,5 +108,11 @@ window.onclick = function(event) {
   }
 }
 
-
+function notifyDriver(e) {
+    e.preventDefault();
+    $("#routes-title").click(function(){
+        event.stopPropagation();
+    });
+    alert("Notified Driver!");
+}
 

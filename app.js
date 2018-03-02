@@ -46,6 +46,9 @@ app.get('/index', index.view);
 app.get('/route*', function(req,res){
 	res.render('allroutes', data);
 	var bus = req.query.bus;
+	// something like
+	// make a list based on data."bus" and 
+	// display or fill in this list somewhere
 });
 app.get('/fav*', function(req, res) {
 	var newfav = {
