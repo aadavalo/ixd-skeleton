@@ -16,6 +16,7 @@ function initializePage() {
     $("#endStop").click(addToFavs);
     $(".dropbtn").click(dropDownButt);
     $("#notifybutton").click(notifyDriver);
+    /*$(".trackchat").click(clickChat);*/
 
 }
 
@@ -128,10 +129,19 @@ function setLocally(){
 }
 
 
+/*function clickChat (e) {
+    e.preventDefault();
+    console.log("clickChat gets called");
+    ga('create', 'UA-114625153-1', 'auto');
+    ga('send', 'event', 'chat', 'click');
+    _gaq.push(['_trackSocial', 'facebook', 'comment']);
+}*/
 
 
-
-
-
+window.fbAsyncInit = function () {
+    FB.Event.subscribe('comment.create', function(targetURL){
+    ga('send','social', 'Facebook', 'comment', targetURL);
+});
+};
 
 
