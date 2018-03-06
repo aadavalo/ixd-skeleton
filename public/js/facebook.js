@@ -22,9 +22,7 @@ function statusChangeCallback(response) {
 function changeUser(response) {
     $('.facebookLogin').hide();
     $('.next').css("visibility", "visible");
-    if(location != "https://bustletest.herokuapp.com/index"){
-      $(location).attr("href",'/index');
-    }
+    $(location).attr("href",'/index');
     $('h5').text(response.name);
     $('img.fb').attr("src",response.picture.data.url);
 
