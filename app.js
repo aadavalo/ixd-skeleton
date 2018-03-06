@@ -74,8 +74,10 @@ app.get('/fav*', function(req, res) {
 		});
 		if (i===1){
 			data.favedroutes.splice(lengy, 1);
+			res.send("showAlert");
 		}
-		else{data.favedroutes.push(newfav);}
+		else{data.favedroutes.push(newfav);
+			res.send("Favorited");}
 	}
 });
 app.get('/stops*', function(req, res){

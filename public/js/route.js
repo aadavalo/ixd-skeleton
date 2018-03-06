@@ -7,6 +7,7 @@ $(document).ready(function() {
     getStops();
 })
 
+
 /*
  * Function that is called when the document is ready.
  */
@@ -116,8 +117,21 @@ function notifyDriver(e) {
     alert("Notified Driver!");
 }
 
+
+
+
 function setLocally(){
+
     $(".favourite_icon").click(function(){
-    $(this).css({"color": "yellow"}).removeClass('fa-star-o').addClass('fa-star');
+    $(this).css({"color": "yellow"})
     });
 }
+
+
+
+
+
+
+
+
+
