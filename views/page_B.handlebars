@@ -57,14 +57,7 @@
 		</div>
 		
 		<div id="routes-title"></div>
-		<div class="dropdown">
-                        	<button class="dropbtn" id="innerButt">Bus Stops</button>
-                        	<div id="myDropdown" class="dropdown-content">
-                        		{{#each currentStops}}
-                        		<a href="#" class="stopp" id="{{stop}}">{{stop}}</a>
-                        		{{/each}}
-                        	</div>
-                        </div><br>
+		
 		<div class="container">
             <div class="accessibility-section">
                 <form id="statusformId" onsubmit="notifyDriver();return false;">
@@ -75,13 +68,22 @@
                         <input type="checkbox"> I have a walker <br>
                         <input type="checkbox"> I have a stroller <br><br>
                         <a href = "#">
-                        <button id="notifybutton" >Notify Driver</button>
+                        <button id="notifybutton" class="tracknotify">Notify Driver</button>
                     	</a>
                     </fieldset>
                 </form>
             </div>
         </div>
 
+		<div class="dropdown">
+			<p> Select your stop: <button class="dropbtn trackstop" id="innerButt">Bus Stops</button> </p> 
+            	
+            	<div id="myDropdown" class="dropdown-content">
+            		{{#each currentStops}}
+            		<a href="#" class="stopp" id="{{stop}}">{{stop}}</a>
+            		{{/each}}
+            	</div>
+            </div><br>
 
 		<div class="dropdown">
 			

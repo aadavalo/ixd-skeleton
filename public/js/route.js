@@ -18,6 +18,8 @@ function initializePage() {
     $(".dropbtn").click(dropDownButt);
     $("#notifybutton").click(notifyDriver);
     $(".stopp").click(changeStop);
+    $(".trackstop").click(clickStop);
+    $(".tracknotify").click(clickNotify);
 
 }
 
@@ -144,11 +146,24 @@ function setLocally(){
     _gaq.push(['_trackSocial', 'facebook', 'comment']);
 }*/
 
-
+/*
 window.fbAsyncInit = function () {
     FB.Event.subscribe('comment.create', function(targetURL){
     ga('send','social', 'Facebook', 'comment', targetURL);
 });
 };
+*/
 
+function clickStop(e) {
+    e.preventDefault();
+    console.log("clickStop gets called");
+    ga('create', 'UA-114625153-1', 'auto');
+    ga('send', 'event', 'setstop', 'click');
+}
 
+function clickNotify(e) {
+    e.preventDefault();
+    console.log("clickNotify gets called");
+    ga('create', 'UA-114625153-1', 'auto');
+    ga('send', 'event', 'notifydriver', 'click');
+}
