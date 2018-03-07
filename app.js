@@ -62,7 +62,6 @@ app.get('/fav*', function(req, res) {
 		data.favedroutes.forEach(function(route){
 			if (route.route===newfav.route) {
 				lengy = data.favedroutes.indexOf(route);
-				console.log(lengy);
 				i=1;
 			}
 		});
@@ -75,10 +74,9 @@ app.get('/fav*', function(req, res) {
 app.get('/stops*', function(req, res){
 	data.currentStops = [];
 	var routeName = req.query.stop;
-	data.MesaShuttle.forEach(function(stop){
+	data[routeName].forEach(function(stop){
 		data.currentStops.push(stop);
 	});
-	console.log(data.currentStops);
 });
 
 // Example route
