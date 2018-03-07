@@ -2,9 +2,9 @@
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
+    
 	initializePage();
     changeTitle();
-    getStops();
 })
 
 
@@ -14,9 +14,10 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
     $("#endStop").click(addToFavs);
+    getStops();
     $(".dropbtn").click(dropDownButt);
     $("#notifybutton").click(notifyDriver);
-    /*$(".trackchat").click(clickChat);*/
+    $(".stopp").click(changeStop);
 
 }
 
@@ -25,6 +26,12 @@ function changeTitle(){
     var newU = u.substr(u.lastIndexOf('=')+1);
     var finalU = newU.split('%20').join(' ');
     $("#routes-title").html(finalU);
+}
+
+function changeStop(e){
+    e.preventDefault();
+    var st = $(this).closest('.stopp').attr('id');
+    $("#innerButt").text(st);
 }
 
 function addToFavs(e) {

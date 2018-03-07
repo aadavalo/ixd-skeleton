@@ -65,7 +65,7 @@
 
 	],
 
-	"North Campus Shuttle": [
+	"NorthCampusShuttle": [
 		{
 			"stop": "P 704 Regents Parking"
 		},
@@ -197,8 +197,179 @@
 		}
 	],
 
+	"ArribaShuttle": [
+		{
+			"stop": "Gilman and Myers Eastbound"
+		},
+		{
+			"stop": "Regents and Noble"
+		},
+		{
+			"stop": "Arriba and Regents"
+		},
+		{
+			"stop": "Lebon and Palmilla"
+		},
+		{
+			"stop": "Nobel and Lebon"
+		}
+	],
+
+	"SIOCampusShuttle": [
+		{
+			"stop": "Mandeville Auditorium"
+		},
+		{
+			"stop": "Gilman & Osler CW"
+		},
+		{
+			"stop": "Revelle Parking CW"
+		},
+		{
+			"stop": "La Jolla Shores"
+		},
+		{
+			"stop": "Coast Apts"
+		},
+		{
+			"stop": "Southwest Fisheries"
+		},
+		{
+			"stop": "IGPP"
+		},
+		{
+			"stop": "Vaughan Hall"
+		},
+		{
+			"stop": "SIO Forum"
+		},
+		{
+			"stop": "Vaughan Hall Inbound"
+		},
+		{
+			"stop": "IGPP Inbound"
+		},
+		{
+			"stop": "Nierenberg Hall Inbound"
+		},
+		{
+			"stop": "Birch Inbound"
+		},
+		{
+			"stop": "Coast Apts Inbound"
+		},
+		{
+			"stop": "Expedition Way Inbound"
+		},
+		{
+			"stop": "Revelle Parking Eastbound"
+		},
+		{
+			"stop": "Gilman & Osler Med"
+		}
+	],
+	"WestCampusConnector": [
+		{
+			"stop": "Gilman and Myers Eastbound"
+		},
+		{
+			"stop": "Regents and Noble"
+		},
+		{
+			"stop": "Arriba and Regents"
+		},
+		{
+			"stop": "Lebon and Palmilla"
+		},
+		{
+			"stop": "Nobel and Lebon"
+		}
+	],
+	"EastCampusConnector": [
+		{
+			"stop": "Gilman and Myers Eastbound"
+		},
+		{
+			"stop": "Regents and Noble"
+		},
+		{
+			"stop": "Arriba and Regents"
+		},
+		{
+			"stop": "Lebon and Palmilla"
+		},
+		{
+			"stop": "Nobel and Lebon"
+		}
+	],
+	"HillcrestMedicalCenterShuttle": [
+		{
+			"stop": "Gilman and Myers Eastbound"
+		},
+		{
+			"stop": "Regents and Noble"
+		},
+		{
+			"stop": "Arriba and Regents"
+		},
+		{
+			"stop": "Lebon and Palmilla"
+		},
+		{
+			"stop": "Nobel and Lebon"
+		}
+	],
+	"CoasterShuttle": [
+		{
+			"stop": "Gilman and Myers Eastbound"
+		},
+		{
+			"stop": "Regents and Noble"
+		},
+		{
+			"stop": "Arriba and Regents"
+		},
+		{
+			"stop": "Lebon and Palmilla"
+		},
+		{
+			"stop": "Nobel and Lebon"
+		}
+	],
+	"WeekendCampusLoop": [
+		{
+			"stop": "Gilman and Myers Eastbound"
+		},
+		{
+			"stop": "Regents and Noble"
+		},
+		{
+			"stop": "Arriba and Regents"
+		},
+		{
+			"stop": "Lebon and Palmilla"
+		},
+		{
+			"stop": "Nobel and Lebon"
+		}
+	],
 
 	"favedroutes": [],
 
-	"currentStops": []
+	"currentStops": [
+		{
+			"stop": "Gilman and Myers Eastbound"
+		},
+		{
+			"stop": "Regents and Noble"
+		},
+		{
+			"stop": "Arriba and Regents"
+		},
+		{
+			"stop": "Lebon and Palmilla"
+		},
+		{
+			"stop": "Nobel and Lebon"
+		}]
 }
