@@ -35,13 +35,19 @@
 		</div>
 
 		<div id="routes-title"></div>
-
+		<div class="dropdown">
+                        	<button class="dropbtn" id="innerButt">Stop</button>
+                        	<div id="myDropdown" class="dropdown-content">
+                        		{{#each currentStops}}
+                        		<a href="#" class="stopp" id="{{stop}}">{{stop}}</a>
+                        		{{/each}}
+                        	</div>
+                        </div><br>
 		<div class="container">
             <div class="accessibility-section">
                 <form id="statusformId" onsubmit="notifyDriver();return false;">
                     <fieldset id="ridestatus">
                         <legend><h3> Currently, for this ride: </h3></legend>
-                        
                         <input type="checkbox"> I have a wheelchair <br>
                         <input type="checkbox"> I have a bike <br>
                         <input type="checkbox"> I have a walker <br>
@@ -54,16 +60,7 @@
             </div>
         </div>
 
-		<div class="dropdown">
-			
-			<button class="dropbtn"><a href = "#">Stop</button></a>
-  			<div id="myDropdown" class="dropdown-content">
-  			{{#each currentStops}}
-  			<a href="#">{{stop}}</a>
-  			{{/each}}
-  			</div>
-  			
-		</div>
+		
 <!--
 		<div class="flexy">
 		<button >
