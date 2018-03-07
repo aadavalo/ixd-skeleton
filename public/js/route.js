@@ -7,6 +7,7 @@ $(document).ready(function() {
     changeTitle();
 })
 
+
 /*
  * Function that is called when the document is ready.
  */
@@ -17,6 +18,7 @@ function initializePage() {
     $(".dropbtn").click(dropDownButt);
     $("#notifybutton").click(notifyDriver);
     $(".stopp").click(changeStop);
+
 }
 
 function changeTitle(){
@@ -73,12 +75,12 @@ $("#search-p").focus(function() {
 })
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%";
 }
 
 /* Close/hide the sidenav */
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("myNav").style.width = "0";
 }
 
 
@@ -122,4 +124,31 @@ function notifyDriver(e) {
     });
     alert("Notified Driver!");
 }
+
+
+
+
+function setLocally(){
+
+    $(".favourite_icon").click(function(){
+    $(this).css({"color": "yellow"})
+    });
+}
+
+
+/*function clickChat (e) {
+    e.preventDefault();
+    console.log("clickChat gets called");
+    ga('create', 'UA-114625153-1', 'auto');
+    ga('send', 'event', 'chat', 'click');
+    _gaq.push(['_trackSocial', 'facebook', 'comment']);
+}*/
+
+
+window.fbAsyncInit = function () {
+    FB.Event.subscribe('comment.create', function(targetURL){
+    ga('send','social', 'Facebook', 'comment', targetURL);
+});
+};
+
 

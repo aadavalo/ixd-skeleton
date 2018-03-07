@@ -12,6 +12,8 @@ var login = require('./routes/login');
 var index = require('./routes/index');
 var allroutes = require('./routes/allroutes');
 var add = require('./routes/add');
+var page_B = require('./routes/page_B');
+var page_A = require('./routes/page_A');
 
 // Example route
 // var user = require('./routes/user');
@@ -41,12 +43,16 @@ if ('development' == app.get('env')) {
 var data = require('./data.json');
 app.get('/', login.view);
 app.get('/index', index.view);
-app.get('/route*', function(req,res){
+app.get('/routeA*', function(req,res){
 	res.render('allroutes', data);
 	var bus = req.query.bus;
 	// something like
 	// make a list based on data."bus" and 
 	// display or fill in this list somewhere
+});
+app.get('/routeB*', function(req,res){
+	res.render('page_B', data);
+	var bus = req.query.bus;
 });
 app.get('/fav*', function(req, res) {
 	var newfav = {
@@ -67,8 +73,10 @@ app.get('/fav*', function(req, res) {
 		});
 		if (i===1){
 			data.favedroutes.splice(lengy, 1);
+			res.send("showAlert");
 		}
-		else{data.favedroutes.push(newfav);}
+		else{data.favedroutes.push(newfav);
+			res.send("Favorited");}
 	}
 });
 app.get('/stops*', function(req, res){

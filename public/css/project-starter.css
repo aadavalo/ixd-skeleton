@@ -187,7 +187,7 @@ img.avatar{
 /*  Overlay*/
 
 span{
-    width:20%;
+    width:100%;
 }
 .sidenav , .sidenav2 {
     height: 100%; /* 100% Full-height */
@@ -563,8 +563,6 @@ span.glyphicon.glyphicon-log-out{
 .show {display:block;}
 
 .container .accessibility-section {
-    width: 70%;
-    margin: auto;
 }
 
 #stylefb{

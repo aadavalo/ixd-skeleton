@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114826540-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-114826540-1');
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics end -->
-
-
-
 		<title>Bustle</title>	
 		<meta charset="utf-8">
   		<link href="../css/project-starter.css" rel="stylesheet">
@@ -44,7 +30,7 @@
 
 		<div class="flexy">
 			<button>
-				<a href="#" id="endStop"> <i class="fa fa-star favourite_icon" style="font-size:48px;color:grey"></i>
+				<a href="#" id="endStop"> <i class="fa fa-star" style="font-size:48px;color:black"></i>
 				</a>
 			</button>
 			<button>
@@ -54,33 +40,10 @@
 		</div>
 
 		<div id="routes-title"></div>
-		<div class="dropdown">
-                        	<button class="dropbtn" id="innerButt">Stop</button>
-                        	<div id="myDropdown" class="dropdown-content">
-                        		{{#each currentStops}}
-                        		<a href="#" class="stopp" id="{{stop}}">{{stop}}</a>
-                        		{{/each}}
-                        	</div>
-                        </div><br>
-		<div class="container">
-            <div class="accessibility-section">
-                <form id="statusformId" onsubmit="notifyDriver();return false;">
-                    <fieldset id="ridestatus">
-                        <legend><h3> Currently, for this ride: </h3></legend>
-                        <input type="checkbox"> I have a wheelchair <br>
-                        <input type="checkbox"> I have a bike <br>
-                        <input type="checkbox"> I have a walker <br>
-                        <input type="checkbox"> I have a stroller <br><br>
-                        <a href = "#">
-                        <button id="notifybutton">Notify Driver</button>
-                    	</a>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-
 
 		<div class="dropdown">
+			
+			<button class="dropbtn"><a href = "#">Stop</button></a>
   			<div id="myDropdown" class="dropdown-content">
   			{{#each currentStops}}
   			<a href="#">{{stop}}</a>
@@ -88,7 +51,6 @@
   			</div>
   			
 		</div>
-
 <!--
 		<div class="flexy">
 		<button >
@@ -107,7 +69,7 @@
 
 
 	<div id ="stylefb">
-		<div class="fb-comments" data-width="800px" data-numposts="10" data-order-by="reverse_time" style="position: static;"></div>
+		<div class="fb-comments" data-href="https://bustle.herokuapp.com/" data-width="800px" data-numposts="10" data-order-by="reverse_time" style="position: static; "></div>
 	</div>
 
 

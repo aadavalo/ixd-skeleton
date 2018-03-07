@@ -21,5 +21,7 @@ function statusChangeCallback(response) {
 
 function changeUser(response) {
     $('.next').css("visibility", "visible");
+    $('h5').text(response.name);
+    $('img.fb').attr("src",response.picture.data.url);
 
 }
