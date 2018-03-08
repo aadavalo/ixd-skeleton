@@ -24,9 +24,19 @@ function initializePage() {
 
 function changeTitle(){
     var u = window.location.href;
-    var newU = u.substr(u.indexOf('=')+1, u.indexOf('&utm'));
+    console.log("this is u --> " + u);
+
+    var newU = u.substr(u.indexOf('=')+1);
+    console.log("this is newU --> " + newU);
+    
     var finalU = newU.split('%20').join(' ');
+    console.log("this is finalU --> " + finalU);
+
+    if (finalU.indexOf('_expid') > -1) {
+        finalU = finalU.substring(0,finalU.indexOf("&"));
+    }
     $("#routes-title").text(finalU);
+
 }
 
 function changeStop(e){
@@ -38,7 +48,7 @@ function changeStop(e){
 function addToFavs(e) {
     e.preventDefault();
     var u = window.location.href;
-    var newU = u.substr(u.indexOf('=')+1, u.indexOf('&utm'));
+    var newU = u.substr(u.indexOf('=')+1);
     var finalU = newU.split('%20').join(' ');
     var q = "/fav?bus=" +finalU;
     $.get(q);
@@ -46,7 +56,7 @@ function addToFavs(e) {
 
 function getStops(){
     var u = window.location.href;
-    var newU = u.substr(u.indexOf('=')+1, u.indexOf('&utm'));
+    var newU = u.substr(u.indexOf('=')+1);
     var finalU = newU.split('%20').join('');
     var q = "stops?stop=" + finalU;
     $.get(q);
