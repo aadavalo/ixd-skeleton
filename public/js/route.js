@@ -20,14 +20,15 @@ function initializePage() {
     $(".stopp").click(changeStop);
     $(".trackstop").click(clickStop);
     $(".tracknotify").click(clickNotify);
+    changeTitle();
 
 }
 
 function changeTitle(){
     var u = window.location.href;
-    var newU = u.substr(u.lastIndexOf('=')+1);
+    var newU = u.substr(u.indexOf('=')+1, u.indexOf('&utm'));
     var finalU = newU.split('%20').join(' ');
-    $("#routes-title").html(finalU);
+    $("#routes-title").text(finalU);
 }
 
 function changeStop(e){
@@ -39,7 +40,7 @@ function changeStop(e){
 function addToFavs(e) {
     e.preventDefault();
     var u = window.location.href;
-    var newU = u.substr(u.lastIndexOf('=')+1);
+    var newU = u.substr(u.indexOf('=')+1, u.indexOf('&utm'));
     var finalU = newU.split('%20').join(' ');
     var q = "/fav?bus=" +finalU;
     $.get(q);
@@ -47,7 +48,7 @@ function addToFavs(e) {
 
 function getStops(){
     var u = window.location.href;
-    var newU = u.substr(u.lastIndexOf('=')+1);
+    var newU = u.substr(u.indexOf('=')+1, u.indexOf('&utm'));
     var finalU = newU.split('%20').join('');
     var q = "stops?stop=" + finalU;
     $.get(q);
