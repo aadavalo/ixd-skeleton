@@ -20,8 +20,6 @@ function initializePage() {
     $(".stopp").click(changeStop);
     $(".trackstop").click(clickStop);
     $(".tracknotify").click(clickNotify);
-    changeTitle();
-
 }
 
 function changeTitle(){
