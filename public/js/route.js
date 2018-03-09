@@ -18,14 +18,25 @@ function initializePage() {
     $(".dropbtn").click(dropDownButt);
     $("#notifybutton").click(notifyDriver);
     $(".stopp").click(changeStop);
-
+    $(".trackstop").click(clickStop);
+    $(".tracknotify").click(clickNotify);
 }
 
 function changeTitle(){
     var u = window.location.href;
-    var newU = u.substr(u.lastIndexOf('=')+1);
+    console.log("this is u --> " + u);
+
+    var newU = u.substr(u.indexOf('bus=')+4);
+    console.log("this is newU --> " + newU);
+    
     var finalU = newU.split('%20').join(' ');
-    $("#routes-title").html(finalU);
+    console.log("this is finalU --> " + finalU);
+
+    if (finalU.indexOf('_expid') > -1 || finalU.indexOf('_referrer')) {
+        finalU = finalU.substring(0,finalU.indexOf("&"));
+    }
+    $("#routes-title").text(finalU);
+
 }
 
 function changeStop(e){
@@ -37,7 +48,7 @@ function changeStop(e){
 function addToFavs(e) {
     e.preventDefault();
     var u = window.location.href;
-    var newU = u.substr(u.lastIndexOf('=')+1);
+    var newU = u.substr(u.indexOf('bus=')+4);
     var finalU = newU.split('%20').join(' ');
     var q = "/fav?bus=" +finalU;
     $.get(q);
@@ -45,7 +56,7 @@ function addToFavs(e) {
 
 function getStops(){
     var u = window.location.href;
-    var newU = u.substr(u.lastIndexOf('=')+1);
+    var newU = u.substr(u.indexOf('bus=')+4);
     var finalU = newU.split('%20').join('');
     var q = "stops?stop=" + finalU;
     $.get(q);
@@ -144,11 +155,24 @@ function setLocally(){
     _gaq.push(['_trackSocial', 'facebook', 'comment']);
 }*/
 
-
+/*
 window.fbAsyncInit = function () {
     FB.Event.subscribe('comment.create', function(targetURL){
     ga('send','social', 'Facebook', 'comment', targetURL);
 });
 };
+*/
 
+function clickStop(e) {
+    e.preventDefault();
+    console.log("clickStop gets called");
+    ga('create', 'UA-114625153-1', 'auto');
+    ga('send', 'event', 'trackstop', 'click');
+}
 
+function clickNotify(e) {
+    e.preventDefault();
+    console.log("clickNotify gets called");
+    ga('create', 'UA-114625153-1', 'auto');
+    ga('send', 'event', 'notifydriver', 'click');
+}

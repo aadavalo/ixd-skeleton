@@ -526,11 +526,13 @@ span.glyphicon.glyphicon-log-out{
 .dropbtn {
     background-color: #58D5BA;
     color: white;
-    padding: 16px;
+    padding: 12px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    
 }
+
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: #58D5C8;
@@ -539,6 +541,11 @@ span.glyphicon.glyphicon-log-out{
 .dropdown {
     position: relative;
     display: inline-block;
+    text-align: center;
+    margin-left: 27%;
+}
+.dropdown p{
+  font-size: 18px;
 }
 
 .dropdown-content {
