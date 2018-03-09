@@ -167,7 +167,7 @@ function clickStop(e) {
     e.preventDefault();
     console.log("clickStop gets called");
     ga('create', 'UA-114625153-1', 'auto');
-    ga('send', 'event', 'setstop', 'click');
+    ga('send', 'event', 'trackstop', 'click');
 }
 
 function clickNotify(e) {
