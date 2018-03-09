@@ -61,11 +61,13 @@ div.fb-comments.fb_iframe_widget{
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: 0;
+    /*position: absolute;*/
+    /*top: 0;*/
     right: 10px;
-    font-size: 37px;
+    font-size: 39px;
     z-index: 2;
+    float: right;
+    padding-top: 0px;
 }
 
 @media screen and (max-height: 450px) {
