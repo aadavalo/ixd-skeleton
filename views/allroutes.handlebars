@@ -61,19 +61,19 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 		<div class="flexy">
 			<button>
-				<a href="#" id="endStop"> <i class="fa fa-star favourite_icon" style="font-size:48px;color:grey"></i>
+				<a href="#" id="endStop"> <i class="fa fa-star favourite_icon" style="font-size:48px;color:#f1cd0a"></i>
 				</a>
 			</button>
 			<button>
-				<a href="/index" id="startStop"> <i class="fa fa-home" style="font-size:48px;color:black"></i>
+				<a href="/index" id="startStop"> <i class="fa fa-home" style="font-size:48px;color:#555"></i>
 				</a>
 			</button>
 		</div>
 
-		<div id="routes-title"></div>
+		<div id="routes-title"><b></b></div>
 
 		<div class="dropdown">
-			<p> Select your stop: <button class="dropbtn" id="innerButt">Bus Stops</button> </p> 
+			<p> Select your stop: <button class="dropbtn" id="innerButt">Bus Stops &#9660;</button> </p> 
                         	
         	<div id="myDropdown" class="dropdown-content">
         		{{#each currentStops}}
@@ -87,7 +87,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
             <div class="accessibility-section">
                 <form id="statusformId" onsubmit="notifyDriver();return false;">
                     <fieldset id="ridestatus">
-                        <legend><h3> Currently, for this ride: </h3></legend>
+                        <legend><h3> For this ride: </h3></legend>
                         <input type="checkbox"> I have a wheelchair <br>
                         <input type="checkbox"> I have a bike <br>
                         <input type="checkbox"> I have a walker <br>

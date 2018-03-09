@@ -416,8 +416,8 @@ input#search-p{
 
 #routes-title {
   text-align: center;
-  font-size: 25px;
-  font-style: italic;
+  font-size: 31px;
+  /*font-style: italic;*/
 }
 
 
@@ -539,13 +539,14 @@ span.glyphicon.glyphicon-log-out{
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    /*position: relative;*/
+    /*display: inline-block;*/
     text-align: center;
     margin-left: 27%;
 }
 .dropdown p{
   font-size: 18px;
+  margin-left: -95px;
 }
 
 .dropdown-content {
