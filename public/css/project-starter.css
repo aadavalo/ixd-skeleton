@@ -546,7 +546,9 @@ span.glyphicon.glyphicon-log-out{
 }
 .dropdown p{
   font-size: 18px;
-  margin-left: -95px;
+  margin-right: 3%;
+  text-align: left;
+  padding-top: 1px;
 }
 
 .dropdown-content {
@@ -570,8 +572,6 @@ span.glyphicon.glyphicon-log-out{
 
 .show {display:block;}
 
-.container .accessibility-section {
-}
 
 #stylefb{
   background-color: #eee;
@@ -585,7 +585,107 @@ span.glyphicon.glyphicon-log-out{
 
 
 
+/***********************    Nearby Styling    ***********************/
+
+div.nearby h2 {
+  position: relative;
+  text-align: left;
+  margin-left: 5%;
+  font-size: 27px;
+  font-style: italic;
+}
+
+div.nearby a{
+  position: relative;
+  text-align: left;
+  margin-left: 10%;
+  color: #686866;
+}
+
+div.nearby ul{
+  width: 80%;
+  margin-left: 10%;
+  list-style: none;
+  font-size: 18px;
+  padding: 0.3px;
+  border-radius: 3px;
+}
+
+div.nearby ul li {
+  margin: 2.5%;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  padding-top: 1px;
+  padding-bottom:1px;
+}
 
 
+/*******************  help pop-up  ***************************/
 
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+#help-popup {
+  font-size: 14px;
+  word-spacing: 0.1px;
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 0;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/************************************************************/
 

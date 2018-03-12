@@ -371,5 +371,16 @@
 		},
 		{
 			"stop": "Nobel and Lebon"
-		}]
+		}],
+
+	"nearbyStops": [
+		{
+			"route": "Mesa Shuttle",
+			"id": 11
+		},
+		{
+			"route": "South Campus Shuttle",
+			"id": 12
+		}
+	]
 }

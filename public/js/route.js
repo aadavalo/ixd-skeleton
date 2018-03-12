@@ -133,7 +133,7 @@ function notifyDriver(e) {
     $("#routes-title").click(function(){
         event.stopPropagation();
     });
-    alert("Notified Driver!");
+    alert("Stop Requested!");
 }
 
 

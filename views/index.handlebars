@@ -18,6 +18,10 @@
   	<link href="css/project-starter.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -53,6 +57,8 @@
       </div>
     </div>
 
+                                    <!-- search bar starts -->
+
     <div id="main">
   	        <div class = "search-container">
   	           <input type="text" id="search-p" onblur="this.value=''" onkeyup= "search()"placeholder="Search Routes to Connect With">
@@ -65,12 +71,30 @@
               {{/each}}
             </ul>
           </div>
+    </div>
+
+                                      <!-- nearby starts -->
+
+    <div class="nearby">
+      <h2> Nearby... </h2> 
+      <ul>
+        {{#each nearbyStops}}
+          <li class="lists" id="{{route}}"> <a href="#"> {{route}} </a> </li>
+        {{/each}}
+      </ul>
+    </div>
+
+                                      <!-- favorites starts -->
+    <h3> Favorites 
+  
+        <span class="popup glyphicon glyphicon-question-sign helpicon" onclick="favehelp()">
+          <span class="popuptext" id="help-popup"> To add a route to your favorites, navigate to the route itself using the search bar. </span>
+
+        </span>
+
+    </h3> 
     
 
-
-        <h1> Favorites </h1>
-
-      
     <div class="box">
 
        {{#each favedroutes}}
