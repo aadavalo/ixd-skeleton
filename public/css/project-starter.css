@@ -480,6 +480,7 @@ img {
 
 
 
+
 div.container{
   padding-right: 0;
   padding-left: 0;
@@ -571,6 +572,15 @@ span.glyphicon.glyphicon-log-out{
 .dropdown a:hover {background-color: #ddd}
 
 .show {display:block;}
+
+
+.container .accessibility-section {
+  padding-right: 0;
+  padding-left: 15%;
+  text-align: center;
+  width: 70%; 
+
+}
 
 
 #stylefb{
@@ -682,10 +692,28 @@ div.nearby ul li {
     to {opacity: 1;}
 }
 
+
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
 }
+
+.containerv {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
 
 /************************************************************/
 
