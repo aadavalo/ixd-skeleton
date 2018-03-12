@@ -51,6 +51,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 		</script>
+		
 
 		<div id="top"> 
       		<div class="title"><img src="/images/LogoFE.jpg" alt="Avatar" class="avatar"></div>
@@ -88,12 +89,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                 <form id="statusformId" onsubmit="notifyDriver();return false;">
                     <fieldset id="ridestatus">
                         <legend><h3> For this ride: </h3></legend>
-                        <input type="checkbox"> I have a wheelchair <br>
-                        <input type="checkbox"> I have a bike <br>
-                        <input type="checkbox"> I have a walker <br>
-                        <input type="checkbox"> I have a stroller <br><br>
+                        <input type="checkbox"> I have a wheelchair<br>
+                        <input type="checkbox"> I have a bike &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                        <input type="checkbox"> I have a walker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                        <input type="checkbox"> I have a stroller&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
                         <a href = "#">
-                        <button id="notifybutton" class="tracknotify">Notify Driver</button>
+                        <button id="notifybutton" class="tracknotify">Request Stop</button>
                     	</a>
                     </fieldset>
                 </form>
@@ -145,7 +146,27 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	</div>
 	</section>
 
-	<span style="font-size:30px;cursor:pointer;position: absolute;top:75%;" onclick="openNav()">&#9658; Chat with others</span>
+	<!--
+	<span style="font-size:30px;cursor:pointer;position: relative;top:90%;" onclick="openNav()"><img class="manImg" src="/images/fb.png"> </img>
+	&#9658; Chat with others</span>
+	-->
+
+	<span style="font-size:30px;cursor:pointer;position: relative;top:90%;" onclick="openNav()">
+	<div class="containerv">
+	  <img src="/images/fb3.png" alt="Norway" style="width:100%;">
+	  <div class="text-block"> 
+	    
+	    <!--
+	    <p>Ask others about bus or line information.</p>
+	    <span style="font-size:30px;cursor:pointer;position: relative;top:90%;" onclick="openNav()">
+		&#9658; Chat with others</span>
+
+		-->
+
+	  </div>
+	</div>
+	</span>
+
 
 
 
