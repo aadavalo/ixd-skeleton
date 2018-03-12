@@ -85,4 +85,9 @@ $("#endStop").click(function(){
 
 });
 
+function favehelp (e) {
+    console.log("favehelp gets called");
+    var popup = document.getElementById("help-popup");
+    popup.classList.toggle("show");
+}
 
