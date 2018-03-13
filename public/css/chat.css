@@ -93,6 +93,8 @@ div.fb-comments.fb_iframe_widget{
 fieldset#ridestatus{
     background-color: #ffffff;
     border-color: #ed785f;
+    padding-bottom: 0%;
+    padding-top: 0%;
 }
 
 

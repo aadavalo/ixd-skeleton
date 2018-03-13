@@ -418,6 +418,7 @@ input#search-p{
   font-size: 31px;
   font-family: 'Galindo';
   /*font-style: italic;*/
+  margin-top: -10px;
 }
 
 
@@ -549,8 +550,9 @@ span.glyphicon.glyphicon-log-out{
   font-size: 18px;
   margin-right: 26%;
   /*text-align: left;*/
-  padding-top: 1px;
-  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: -14px;
+  margin-top: 0px;
 }
 
 .dropdown-content {
@@ -608,11 +610,11 @@ div.nearby{
   margin-left: 5%;
 }
 
-div.nearby h2 {
+div.nearby h4 {
   /*position: relative;*/
   text-align: left;
   margin-left: 5%;
-  font-size: 27px;
+  font-size: 24px;
   font-family: 'Galindo';
 }
 
@@ -737,4 +739,12 @@ h3 {
 
 span.popup.glyphicon.glyphicon-question-sign.helpicon{
   position: inherit;
+}
+
+
+
+
+#notify{
+  text-align: center;
+  padding-top: 5px;
 }

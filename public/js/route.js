@@ -137,14 +137,40 @@ function notifyDriver(e) {
 }
 
 
-
+var clicked = false;
 
 function setLocally(){
-
-    $(".favourite_icon").click(function(){
-    $(this).css({"color": "yellow"})
-    });
+    /*if(clicked == false){
+        $(".favourite_icon").click(function(){
+        $(this).css({"color": "yellow"})
+        });
+        clicked = true;
+    }else {
+        $(".favourite_icon").click(function(){
+        $(this).css({"color": "grey"})
+        });
+        clicked = false;
+    }*/
+    if(clicked == false){
+        $(document).on('click', ".favourite_icon", function() {
+        $(this).css({"color": "yellow"})        
+        });
+        clicked=true;
+    }else{
+        
+        $(document).on('click', ".favourite_icon", function() {
+        $(this).css({"color": "grey"})        
+        });
+        clicked=false;
+    }
+    
 }
+
+
+$(document).on('click', "a.tabclick", function() {
+    var liId = $(this).parent("li").attr("id");
+    alert(liId);        
+});
 
 
 /*function clickChat (e) {

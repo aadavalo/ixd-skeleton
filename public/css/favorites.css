@@ -15,13 +15,15 @@
 /* how to display the buttons*/
 .favebutton {
 	border: 0.2px solid gray;
-	padding: 5px 5px;
+	padding: 2px 2px;
 	color: black;
-	background-color: #eee;
+	background-color: #de6030;
 	font-size: 20px;
 	width: 80%;
 	margin: auto;
 	display: block;
+	color: #fff;
+	border-radius: 10px;
 }
 
 #addFaveRoute {

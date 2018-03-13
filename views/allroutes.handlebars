@@ -62,8 +62,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<div id="fb-root"></div>
 
 		<div class="flexy">
-			<button>
-				<a href="#" id="endStop"> <i class="fa fa-star favourite_icon" style="font-size:48px;color:#555"></i>
+			<button >
+				<a href="#" id="endStop"> <i onclick="setLocally()" class="fa fa-star favourite_icon" style="font-size:48px;color:#555"></i>
 				</a>
 			</button>
 			<button>
@@ -103,15 +103,20 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                         <input type="checkbox"> I have a bike &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
                         <input type="checkbox"> I have a walker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
                         <input type="checkbox"> I have a stroller&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-                        <a href = "#">
-                        <button id="notifybutton" class="tracknotify">Request Stop</button>
-                    	</a>
+                        <!--<a href = "#">
+                        <button id="notifybutton" class="tracknotify">Request Stop</button> 
+                    	</a> -->
                     </fieldset>
                 </form>
             </div>
         </div>
-  
 
+        <div id="notify"
+        <a href = "#">
+                        <button id="notifybutton" class="tracknotify">Request Stop</button>
+  		</a>
+
+  	</div>
 <!--
 		<div class="flexy">
 		<button >
