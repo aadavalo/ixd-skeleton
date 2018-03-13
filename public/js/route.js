@@ -32,7 +32,7 @@ function changeTitle(){
     var finalU = newU.split('%20').join(' ');
     console.log("this is finalU --> " + finalU);
 
-    if (finalU.indexOf('_expid') > -1 || finalU.indexOf('_referrer')) {
+    if (finalU.indexOf('_expid') > -1) {
         finalU = finalU.substring(0,finalU.indexOf("&"));
     }
     $("#routes-title").text(finalU);
@@ -163,7 +163,7 @@ function setLocally(){
         });
         clicked=false;
     }
-    
+
 }
 
 
