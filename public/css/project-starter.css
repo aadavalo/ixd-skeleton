@@ -37,8 +37,9 @@
 body{
     height:100%;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF ;
     margin: 0%;
+    background-repeat: no-repeat;
 }
 
 
@@ -98,14 +99,12 @@ body{
 div.title{
   width: 100%;
   height: 40%;
-  background-color: #555;
 
 }
 
 
 img.avatar{
-    width: 94%;
-    margin: 3%;
+    width: 100%;
 }
 
 
@@ -417,6 +416,7 @@ input#search-p{
 #routes-title {
   text-align: center;
   font-size: 31px;
+  font-family: 'Galindo';
   /*font-style: italic;*/
 }
 
@@ -525,7 +525,7 @@ span.glyphicon.glyphicon-log-out{
 }
 
 .dropbtn {
-    background-color: #58D5BA;
+    background-color: #DE600B;
     color: white;
     padding: 12px;
     font-size: 16px;
@@ -540,16 +540,17 @@ span.glyphicon.glyphicon-log-out{
 }
 
 .dropdown {
-    /*position: relative;*/
+    position: relative;
     /*display: inline-block;*/
     text-align: center;
-    margin-left: 27%;
+    margin-left: 23%;
 }
 .dropdown p{
   font-size: 18px;
-  margin-right: 3%;
-  text-align: left;
+  margin-right: 26%;
+  /*text-align: left;*/
   padding-top: 1px;
+  margin-bottom: 0px;
 }
 
 .dropdown-content {
@@ -597,19 +598,29 @@ span.glyphicon.glyphicon-log-out{
 
 /***********************    Nearby Styling    ***********************/
 
+
+div.nearby{
+  border: 1px solid #fff;
+  margin-top: 20px;
+  border-radius: 25px;
+  background: #f3af906e;
+  width: 90%;
+  margin-left: 5%;
+}
+
 div.nearby h2 {
-  position: relative;
+  /*position: relative;*/
   text-align: left;
   margin-left: 5%;
   font-size: 27px;
-  font-style: italic;
+  font-family: 'Galindo';
 }
 
 div.nearby a{
-  position: relative;
+  /*position: relative;*/
   text-align: left;
   margin-left: 10%;
-  color: #686866;
+  color: rgb(251, 251, 251);
 }
 
 div.nearby ul{
@@ -623,7 +634,7 @@ div.nearby ul{
 
 div.nearby ul li {
   margin: 2.5%;
-  background-color: #e8e8e8;
+  background-color: #de6030;
   border-radius: 10px;
   padding-top: 1px;
   padding-bottom:1px;
@@ -634,7 +645,7 @@ div.nearby ul li {
 
 /* Popup container - can be anything you want */
 .popup {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
     cursor: pointer;
     -webkit-user-select: none;
@@ -717,3 +728,13 @@ div.nearby ul li {
 
 /************************************************************/
 
+h3 {
+  font-family: 'Galindo';
+}
+
+
+
+
+span.popup.glyphicon.glyphicon-question-sign.helpicon{
+  position: inherit;
+}
