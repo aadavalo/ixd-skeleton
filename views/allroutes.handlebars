@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-<!-- Google Analytics Content Experiment code -->
+<!--Google Analytics Content Experiment code
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='170544518-3',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
@@ -15,7 +15,7 @@ length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
 valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 </script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
+End of Google Analytics Content Experiment code -->
 
 
 
@@ -40,6 +40,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<script defer src="/js/fontawesome-all.js"></script>
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link href='https://fonts.googleapis.com/css?family=Galindo' rel='stylesheet'>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -54,15 +55,15 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		
 
 		<div id="top"> 
-      		<div class="title"><img src="/images/LogoFE.jpg" alt="Avatar" class="avatar"></div>
+      		<div class="title"><img src="/images/homelogo.jpg" alt="Avatar" class="avatar"></div>
     	</div>
 
 
 		<div id="fb-root"></div>
 
 		<div class="flexy">
-			<button>
-				<a href="#" id="endStop"> <i class="fa fa-star favourite_icon" style="font-size:48px;color:#f1cd0a"></i>
+			<button >
+				<a href="#" id="endStop"> <i onclick="setLocally()" class="fa fa-star favourite_icon" style="font-size:48px;color:#555"></i>
 				</a>
 			</button>
 			<button>
@@ -74,7 +75,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<div id="routes-title"><b></b></div>
 
 		<div class="dropdown">
-			<p> Select your stop: <button class="dropbtn trackstop" id="innerButt">Bus Stops &#9660;</button> </p> 
+			<p> Select stop: <button class="dropbtn trackstop" id="innerButt">Bus Stops &#9660;</button> </p> 
             	
             	<div id="myDropdown" class="dropdown-content">
             		{{#each currentStops}}
@@ -102,15 +103,20 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                         <input type="checkbox"> I have a bike &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
                         <input type="checkbox"> I have a walker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
                         <input type="checkbox"> I have a stroller&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-                        <a href = "#">
-                        <button id="notifybutton" class="tracknotify">Request Stop</button>
-                    	</a>
+                        <!--<a href = "#">
+                        <button id="notifybutton" class="tracknotify">Request Stop</button> 
+                    	</a> -->
                     </fieldset>
                 </form>
             </div>
         </div>
-  
 
+        <div id="notify"
+        <a href = "#">
+                        <button id="notifybutton" class="tracknotify">Request Stop</button>
+  		</a>
+
+  	</div>
 <!--
 		<div class="flexy">
 		<button >
@@ -153,7 +159,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 	<span style="font-size:30px;cursor:pointer;position: relative;top:90%;" onclick="openNav()">
 	<div class="containerv">
-	  <img src="/images/fb3.png" alt="Norway" style="width:100%;">
+	  <img src="/images/fballroutes.png" alt="Norway" style="width:100%;">
 	  <div class="text-block"> 
 	    
 	    <!--

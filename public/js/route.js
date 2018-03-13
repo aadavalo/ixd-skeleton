@@ -32,7 +32,7 @@ function changeTitle(){
     var finalU = newU.split('%20').join(' ');
     console.log("this is finalU --> " + finalU);
 
-    if (finalU.indexOf('_expid') > -1 || finalU.indexOf('_referrer')) {
+    if (finalU.indexOf('_expid') > -1) {
         finalU = finalU.substring(0,finalU.indexOf("&"));
     }
     $("#routes-title").text(finalU);
@@ -137,14 +137,40 @@ function notifyDriver(e) {
 }
 
 
-
+var clicked = false;
 
 function setLocally(){
+    /*if(clicked == false){
+        $(".favourite_icon").click(function(){
+        $(this).css({"color": "yellow"})
+        });
+        clicked = true;
+    }else {
+        $(".favourite_icon").click(function(){
+        $(this).css({"color": "grey"})
+        });
+        clicked = false;
+    }*/
+    if(clicked == false){
+        $(document).on('click', ".favourite_icon", function() {
+        $(this).css({"color": "yellow"})        
+        });
+        clicked=true;
+    }else{
+        
+        $(document).on('click', ".favourite_icon", function() {
+        $(this).css({"color": "grey"})        
+        });
+        clicked=false;
+    }
 
-    $(".favourite_icon").click(function(){
-    $(this).css({"color": "yellow"})
-    });
 }
+
+
+$(document).on('click', "a.tabclick", function() {
+    var liId = $(this).parent("li").attr("id");
+    alert(liId);        
+});
 
 
 /*function clickChat (e) {
