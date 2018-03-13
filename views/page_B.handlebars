@@ -2,6 +2,7 @@
 <html>
 	<head>
 
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114826540-1"></script>
 		<script>
@@ -36,7 +37,7 @@
 		</script>
 
 		<div id="top"> 
-      		<div class="title"><img src="/images/Logo.jpg" alt="Avatar" class="avatar"></div>
+      		<div class="title"><img src="/images/LogoFE.jpg" alt="Avatar" class="avatar"></div>
     	</div>
 
 
@@ -45,36 +46,45 @@
 
 		<div class="flexy">
 			<button >
-				<a href="#" id="endStop"> <i class="fa fa-star favourite_icon" style="font-size:48px;color:grey"></i>
+				<a href="#" id="endStop"> <i class="fa fa-star favourite_icon" style="font-size:48px;color:#f1cd0a"></i>
 				</a>
 			</button>
 
 
 			<button>
-				<a href="/index" id="startStop"> <i class="fa fa-home" style="font-size:48px;color:black"></i>
+				<a href="/index" id="startStop"> <i class="fa fa-home" style="font-size:48px;color:#555"></i>
 				</a>
 			</button>
 		</div>
-
+		
 		<div id="routes-title"></div>
-
+		
 		<div class="container">
             <div class="accessibility-section">
                 <form id="statusformId" onsubmit="notifyDriver();return false;">
                     <fieldset id="ridestatus">
-                        <legend><h3> Currently, for this ride: </h3></legend>
+                        <legend><h3> For this ride: </h3></legend>
                         <input type="checkbox"> I have a wheelchair <br>
                         <input type="checkbox"> I have a bike <br>
                         <input type="checkbox"> I have a walker <br>
                         <input type="checkbox"> I have a stroller <br><br>
                         <a href = "#">
-                        <button id="notifybutton" >Notify Driver</button>
+                        <button id="notifybutton" class="tracknotify">Notify Driver</button>
                     	</a>
                     </fieldset>
                 </form>
             </div>
         </div>
 
+		<div class="dropdown">
+			<p> Select your stop: <button class="dropbtn trackstop" id="innerButt">Bus Stops &#9660;</button> </p> 
+            	
+            	<div id="myDropdown" class="dropdown-content">
+            		{{#each currentStops}}
+            		<a href="#" class="stopp" id="{{stop}}">{{stop}}</a>
+            		{{/each}}
+            	</div>
+            </div><br>
 
 		<div class="dropdown">
 			
@@ -111,7 +121,7 @@
 	</div>
 	</section>
 
-	<span style="font-size:30px;cursor:pointer;position: absolute;top:70%;" onclick="openNav()">&#9658; Chat with others</span>
+	<span style="font-size:30px;cursor:pointer;position: relative;top:90%;" onclick="openNav()">&#9658; Chat with others</span>
 
 	<script src = "https://code.jquery.com/jquery.js"></script>
     <script src = "../js/route.js"></script>

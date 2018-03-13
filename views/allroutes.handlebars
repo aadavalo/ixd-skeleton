@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
+<!--Google Analytics Content Experiment code
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='170544518-3',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+End of Google Analytics Content Experiment code -->
+
+
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114826540-1"></script>
@@ -23,6 +40,7 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<script defer src="/js/fontawesome-all.js"></script>
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link href='https://fonts.googleapis.com/css?family=Galindo' rel='stylesheet'>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -34,53 +52,40 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 		</script>
+		
 
 		<div id="top"> 
-      		<div class="title"><img src="/images/Logo.jpg" alt="Avatar" class="avatar"></div>
+      		<div class="title"><img src="/images/homelogo.jpg" alt="Avatar" class="avatar"></div>
     	</div>
 
 
 		<div id="fb-root"></div>
 
 		<div class="flexy">
-			<button>
-				<a href="#" id="endStop"> <i class="fa fa-star favourite_icon" style="font-size:48px;color:grey"></i>
+			<button >
+				<a href="#" id="endStop"> <i onclick="setLocally()" class="fa fa-star favourite_icon" style="font-size:48px;color:#555"></i>
 				</a>
 			</button>
 			<button>
-				<a href="/index" id="startStop"> <i class="fa fa-home" style="font-size:48px;color:black"></i>
+				<a href="/index" id="startStop"> <i class="fa fa-home" style="font-size:48px;color:#555"></i>
 				</a>
 			</button>
 		</div>
 
-		<div id="routes-title"></div>
-		<div class="dropdown">
-                        	<button class="dropbtn" id="innerButt">Stop</button>
-                        	<div id="myDropdown" class="dropdown-content">
-                        		{{#each currentStops}}
-                        		<a href="#" class="stopp" id="{{stop}}">{{stop}}</a>
-                        		{{/each}}
-                        	</div>
-                        </div><br>
-		<div class="container">
-            <div class="accessibility-section">
-                <form id="statusformId" onsubmit="notifyDriver();return false;">
-                    <fieldset id="ridestatus">
-                        <legend><h3> Currently, for this ride: </h3></legend>
-                        <input type="checkbox"> I have a wheelchair <br>
-                        <input type="checkbox"> I have a bike <br>
-                        <input type="checkbox"> I have a walker <br>
-                        <input type="checkbox"> I have a stroller <br><br>
-                        <a href = "#">
-                        <button id="notifybutton">Notify Driver</button>
-                    	</a>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-
+		<div id="routes-title"><b></b></div>
 
 		<div class="dropdown">
+			<p> Select stop: <button class="dropbtn trackstop" id="innerButt">Bus Stops &#9660;</button> </p> 
+            	
+            	<div id="myDropdown" class="dropdown-content">
+            		{{#each currentStops}}
+            		<a href="#" class="stopp" id="{{stop}}">{{stop}}</a>
+            		{{/each}}
+            	</div>
+         </div><br>
+
+		<div class="dropdown">
+			
   			<div id="myDropdown" class="dropdown-content">
   			{{#each currentStops}}
   			<a href="#">{{stop}}</a>
@@ -89,6 +94,29 @@
   			
 		</div>
 
+		<div class="container">
+            <div class="accessibility-section">
+                <form id="statusformId" onsubmit="notifyDriver();return false;">
+                    <fieldset id="ridestatus">
+                        <legend><h3> For this ride: </h3></legend>
+                        <input type="checkbox"> I have a wheelchair<br>
+                        <input type="checkbox"> I have a bike &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                        <input type="checkbox"> I have a walker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                        <input type="checkbox"> I have a stroller&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                        <!--<a href = "#">
+                        <button id="notifybutton" class="tracknotify">Request Stop</button> 
+                    	</a> -->
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div id="notify"
+        <a href = "#">
+                        <button id="notifybutton" class="tracknotify">Request Stop</button>
+  		</a>
+
+  	</div>
 <!--
 		<div class="flexy">
 		<button >
@@ -103,12 +131,51 @@
 		</button>
 		</div>
 -->
+	
 
-
-
+<!--
 	<div id ="stylefb">
 		<div class="fb-comments" data-width="800px" data-numposts="10" data-order-by="reverse_time" style="position: static;"></div>
 	</div>
+-->
+
+	<section class="trackchat">
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+	    <a href="#"> 
+	    <div id ="stylefb">
+			<div class="fb-comments" data-width="800px" data-numposts="10" data-order-by="reverse_time" style="position: static; "></div>
+		</div></a>
+	  </div>
+	</div>
+	</section>
+
+
+	<!--
+	<span style="font-size:30px;cursor:pointer;position: relative;top:90%;" onclick="openNav()"><img class="manImg" src="/images/fb.png"> </img>
+	&#9658; Chat with others</span>
+	-->
+
+	<span style="font-size:30px;cursor:pointer;position: relative;top:90%;" onclick="openNav()">
+	<div class="containerv">
+	  <img src="/images/fballroutes.png" alt="Norway" style="width:100%;">
+	  <div class="text-block"> 
+	    
+	    <!--
+	    <p>Ask others about bus or line information.</p>
+	    <span style="font-size:30px;cursor:pointer;position: relative;top:90%;" onclick="openNav()">
+		&#9658; Chat with others</span>
+
+		-->
+
+	  </div>
+	</div>
+	</span>
+
+
+
+
 
 
 	<script src = "https://code.jquery.com/jquery.js"></script>

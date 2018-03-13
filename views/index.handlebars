@@ -18,11 +18,16 @@
   	<link href="css/project-starter.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Galindo' rel='stylesheet'>
 
 
     <link rel="stylesheet" href="css/favorites.css"/>
@@ -30,9 +35,9 @@
     <script defer src="/js/fontawesome-all.js"></script>
   </head>
 
-  <body>
+  <body background="/images/login-page.jpg">
     <div id="top"> 
-      <div class="title"><img src="/images/Logo.jpg" alt="Avatar" class="avatar"></div>
+      <div class="title"><img src="/images/homelogo.jpg" alt="Avatar" class="avatar"></div>
 
       <div class="chip">
         <img src="/images/users.jpg" alt="Person" class= "fb" width="96" height="96">
@@ -45,15 +50,19 @@
 
 
      <div class="log">
-        <a href="/" class="btn btn-info btn-sm">
-          <span class="glyphicon glyphicon-log-out"></span> Log out
+        <a href="/" class="btn btn-info btn-sm" style="background-color: #DE600B;
+              border-color: #DE600B;">
+          <span class="glyphicon glyphicon-log-out" style="background-color: #DE600B;
+              border-color: #DE600B;" ></span> Log out
         </a>
       </div>
     </div>
 
+                                    <!-- search bar starts -->
+
     <div id="main">
   	        <div class = "search-container">
-  	           <input type="text" id="search-p" onblur="this.value=''" onkeyup= "search()"placeholder="Search Routes to connect with">
+  	           <input type="text" id="search-p" onblur="this.value=''" onkeyup= "search()"placeholder="Search Routes to Connect With">
             </div>
           
           <div id="routes-p">
@@ -63,12 +72,30 @@
               {{/each}}
             </ul>
           </div>
+    </div>
+
+                                      <!-- nearby starts -->
+
+    <div class="nearby">
+      <h4> Nearby routes... </h4> 
+      <ul>
+        {{#each nearbyStops}}
+          <li class="lists" id="{{route}}"> <a href="#"> {{route}} </a> </li>
+        {{/each}}
+      </ul>
+    </div>
+
+                                      <!-- favorites starts -->
+    <h3> Favorites 
+  
+        <span class="popup glyphicon glyphicon-question-sign helpicon" onclick="favehelp()">
+          <span class="popuptext" id="help-popup"> To add a route to your favorites, navigate to the route itself using the search bar. </span>
+
+        </span>
+
+    </h3> 
     
 
-
-        <h1> Favorites </h1>
-
-      
     <div class="box">
 
        {{#each favedroutes}}

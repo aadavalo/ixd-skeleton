@@ -61,11 +61,13 @@ div.fb-comments.fb_iframe_widget{
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: 0;
+    /*position: absolute;*/
+    /*top: 0;*/
     right: 10px;
-    font-size: 37px;
+    font-size: 39px;
     z-index: 2;
+    float: right;
+    padding-top: 0px;
 }
 
 @media screen and (max-height: 450px) {
@@ -81,10 +83,19 @@ div.fb-comments.fb_iframe_widget{
 
 
 #notifybutton{
-    background-color: #DDE;
+    background-color: #DE600B;
     width: 50%;
+    height: 33px;
+    font-size: 15px;
+    color: #fff
 }
 
+fieldset#ridestatus{
+    background-color: #ffffff;
+    border-color: #ed785f;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
 
 
 
